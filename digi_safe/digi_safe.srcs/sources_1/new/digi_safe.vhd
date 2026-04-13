@@ -21,12 +21,39 @@ architecture Behavioral of digi_safe is
             btn_state   : out STD_LOGIC;
             btn_press   : out STD_LOGIC
          );
-         end component;
-         
+   end component;
+
+  component clk_en is
+        generic ( G_MAX : positive );
+        port (
+            clk : in  std_logic;
+            rst : in  std_logic;
+            ce  : out std_logic
+        );
+    end component;
+
+  component bin2seg is 
+	port(
+           binary: in std_logic_vector(3 downto 0);
+           seg   : out std_logic_vector(6 downto 0)
+	);
+    end component;
+
+
+
+
+
+
+         -- Signals
          signal s_btn_press : STD_LOGIC;
          signal s_shift_reg : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
          signal s_cnt       : integer range 0 to 4 := 0;
-         
+
+	 --For display
+	 signal s_ce_refresh : std_logic;
+    	 signal s_mux_cnt    : unsigned(1 downto 0) := "00";
+    	 signal s_hex_digit  : std_logic_vector(3 downto 0);
+         --Password
          constant SECRET_CODE : STD_LOGIC_VECTOR(15 downto 0) := x"6967";
          
 begin
@@ -63,4 +90,40 @@ begin
              end if;
           end if;
        end process;
+
+
+
+
+--Multiplexer
+--slow switching nums
+clk_en_display: clk_en
+     generic map (G_MAX =>2) --for sim
+     port map(clk => clk,
+	      rst => rst,
+              ce  => s_ce_refresh);
+
+
+--Counter of multiplexer
+p_mux_cnt : process(clk)
+    begin
+        if rising_edge(clk) then
+            if rst = '1' then
+                s_mux_cnt <= "00";
+            elsif s_ce_refresh = '1' then
+                s_mux_cnt <= s_mux_cnt + 1;
+            end if;
+        end if;
+    end process;
+
+
+p_mux_select : process(s_mux_cnt, s_shift_reg)
+    begin
+----
+----
+----
+----
+end process;
+
+
 end Behavioral;
+
