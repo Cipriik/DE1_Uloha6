@@ -41,20 +41,17 @@ architecture Behavioral of digi_safe is
 
 
 
-
-
-
          -- Signals
          signal s_btn_press : STD_LOGIC;
          signal s_shift_reg : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
          signal s_cnt       : integer range 0 to 4 := 0;
-
 	 --For display
 	 signal s_ce_refresh : std_logic;
     	 signal s_mux_cnt    : unsigned(1 downto 0) := "00";
     	 signal s_hex_digit  : std_logic_vector(3 downto 0);
          --Password
          constant SECRET_CODE : STD_LOGIC_VECTOR(15 downto 0) := x"6967";
+
          
 begin
        debounce_0: debounce
@@ -66,7 +63,7 @@ begin
                         btn_press   => s_btn_press
                      );
                
-process(clk, rst)
+p_safe_logic:process(clk)
 begin
     if rst = '1' then
         s_shift_reg <= (others => '0');
@@ -97,7 +94,7 @@ begin
 --Multiplexer
 --slow switching nums
 clk_en_display: clk_en
-     generic map (G_MAX =>2) --for sim
+     generic map (G_MAX =>2) --for sim, for application 200_000
      port map(clk => clk,
 	      rst => rst,
               ce  => s_ce_refresh);
@@ -117,12 +114,35 @@ p_mux_cnt : process(clk)
 
 
 p_mux_select : process(s_mux_cnt, s_shift_reg)
-    begin
-----
-----
-----
-----
+begin
+    
+    an <= (others => '1'); 
+    
+    case s_mux_cnt is
+        when "00" => 
+            s_hex_digit <= s_shift_reg(3 downto 0);   
+            an(0) <= '0';                             
+        when "01" => 
+            s_hex_digit <= s_shift_reg(7 downto 4);   
+            an(1) <= '0';
+        when "10" => 
+            s_hex_digit <= s_shift_reg(11 downto 8);  
+            an(2) <= '0';
+        when "11" => 
+            s_hex_digit <= s_shift_reg(15 downto 12); 
+            an(3) <= '0';
+        when others => 
+            s_hex_digit <= x"0";
+    end case;
 end process;
+
+--initialization of bin2seg
+hex_to_seg : bin2seg
+    port map (
+        binary => s_hex_digit,
+        seg    => seg
+    );
+
 
 
 end Behavioral;
