@@ -3,3 +3,7 @@ Digital Safe / Combination Lock
 Implement a 4-digit code entry system with visual feedback. Store entered codes in registers and compare to the preset combination to indicate success or failure.
 
 1. hodina - Začali sme robiť základnú blokovú schému, spravili základný digi_safe.vhd a zakomponovali do neho debounce. Do projektu sme pridali aj súbory display_driver, bin_2_seg a counter.
+
+2. Zde diagram, obsahuje základní debounce plus dvě komponenty, které později připojím
+
+![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/1f86fd28b584a06432aeda240d27a1e656b0f26c/diagram.drawio.png)
