@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/digi_safe_tb.vhd,1776264053,vhdl,,,,cfg_tb_digi_safe;tb_digi_safe,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd,1776262470,vhdl,C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,,,display_driver,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd,1772638314,vhdl,C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,,,bin2seg,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd,1773243246,vhdl,C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,,,clk_en,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd,1774452940,vhdl,C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,,,debounce,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,1776264767,vhdl,,,,digi_safe,,,,,,,,
+C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd,1776262173,vhdl,C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd,,,safe_control_logic,,,,,,,,

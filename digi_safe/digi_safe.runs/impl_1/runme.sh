@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/270925/Desktop/DE1/digi_safe/digi_safe.runs/impl_1'
+HD_PWD='C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log debounce_counter_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source debounce_counter_top.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log digi_safe.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source digi_safe.tcl -notrace
 
 

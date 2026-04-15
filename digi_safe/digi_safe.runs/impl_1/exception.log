@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/270925/Desktop/DE1/digi_safe/digi_safe.runs/synth_1'
+HD_PWD='C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log debounce_counter_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debounce_counter_top.tcl
+EAStep vivado -log digi_safe.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source digi_safe.tcl

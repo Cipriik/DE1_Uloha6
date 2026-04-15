@@ -1,103 +1,53 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.NUMERIC_STD.ALL;
 
 entity display_driver is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           data : in STD_LOGIC_VECTOR (7 downto 0);
-           seg : out STD_LOGIC_VECTOR (6 downto 0);
-           anode : out STD_LOGIC_VECTOR (1 downto 0));
+    Port (
+        clk          : in  STD_LOGIC;
+        rst          : in  STD_LOGIC;
+        ce_refresh : in  STD_LOGIC; -- Puls z clk_en
+        data       : in  STD_LOGIC_VECTOR (15 downto 0); -- Celý kód ze safe
+        -- Výstupy
+        hex_digit  : out STD_LOGIC_VECTOR (3 downto 0); -- Cifra pro bin2seg
+        anode     : out STD_LOGIC_VECTOR (7 downto 0)  -- Anody displeje
+    );
 end display_driver;
 
 architecture Behavioral of display_driver is
-
-    -- Component declaration for clock enable
-    component clk_en is
-        generic ( G_MAX : positive );
-        port (
-            clk : in  std_logic;
-            rst : in  std_logic;
-            ce  : out std_logic
-        );
-    end component clk_en;
- 
-    -- Component declaration for binary counter
-    component counter is
-        generic ( G_BITS : positive );
-        port (
-            clk : in  std_logic;
-            rst : in  std_logic;
-            en  : in  std_logic;
-            cnt : out std_logic_vector(G_BITS - 1 downto 0)
-        );
-    end component counter;
- 
-    component bin2seg is
-        port (
-        bin : in  std_logic_vector(3 downto 0);
-        seg : out std_logic_vector(6 downto 0)
-        );
-        
-
-    end component bin2seg;
- 
-    signal sig_en : std_logic;
-    signal sig_digit : std_logic_vector(0 downto 0);
-    signal sig_bin   : std_logic_vector(3 downto 0);
-
+    signal s_mux_cnt : unsigned(1 downto 0) := "00";
 begin
-
-    ------------------------------------------------------------------------
-    -- Clock enable generator for refresh timing
-    ------------------------------------------------------------------------
-    clock_0 : clk_en
-        generic map ( G_MAX => 800_000 )  -- Adjust for flicker-free multiplexing
-        port map (                  -- For simulation: 8
-            clk => clk,             -- For implementation: 8_000_000
-            rst => rst,
-            ce  => sig_en
-        );
-
-    counter_0 : counter
-        generic map ( G_BITS => 1 )
-        port map (
-            clk => clk,
-            rst => rst,
-            en  => sig_en,
-            cnt => sig_digit
-        );
-
-    ------------------------------------------------------------------------
-    -- Digit select
-    ------------------------------------------------------------------------
-    sig_bin <= data(3 downto 0) when sig_digit = "0" else
-               data(7 downto 4);
-
-    ------------------------------------------------------------------------
-    -- 7-segment decoder
-    ------------------------------------------------------------------------
-    decoder_0 : bin2seg
-        port map (
-            bin => sig_bin,
-            seg => seg
-        );
-
-    ------------------------------------------------------------------------
-    -- Anode select process
-    ------------------------------------------------------------------------
-    p_anode_select : process (sig_digit) is
+    -- 2-bit čítač pro přepínání displejů
+    p_mux_cnt : process(clk)
     begin
-        case sig_digit is
-            when "0" =>
-                anode <= "10";  -- Right digit active
-            when "1" =>
-                anode <= "01";  -- ľavá číslica
-            
-
-            when others =>
-                anode <= "11";  -- All off
-        end case;
+        if rising_edge(clk) then
+            if rst = '1' then
+                s_mux_cnt <= "00";
+            elsif ce_refresh = '1' then
+                s_mux_cnt <= s_mux_cnt + 1;
+            end if;
+        end if;
     end process;
 
+    -- Multiplexer a dekodér anod
+    p_mux_select : process(s_mux_cnt, data)
+    begin
+        anode <= (others => '1'); -- Všechny displeje vypnuté (log. 1)
+        case s_mux_cnt is
+            when "00" =>
+                hex_digit <= data(3 downto 0);
+                anode(0) <= '0';
+            when "01" =>
+                hex_digit <= data(7 downto 4);
+                anode(1) <= '0';
+            when "10" =>
+                hex_digit <= data(11 downto 8);
+                anode(2) <= '0';
+            when "11" =>
+                hex_digit <= data(15 downto 12);
+                anode(3) <= '0';
+            when others =>
+                hex_digit <= x"0";
+        end case;
+    end process;
 end Behavioral;
