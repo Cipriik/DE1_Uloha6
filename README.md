@@ -6,4 +6,4 @@ Implement a 4-digit code entry system with visual feedback. Store entered codes 
 
 2. Zde diagram, obsahuje základní debounce plus dvě komponenty, které později připojím
 
-![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/1f86fd28b584a06432aeda240d27a1e656b0f26c/diagram.drawio.png)
+![image alt]()
