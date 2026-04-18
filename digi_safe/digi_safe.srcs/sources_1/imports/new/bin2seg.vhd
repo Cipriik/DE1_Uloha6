@@ -9,7 +9,9 @@ end bin2seg;
 
 architecture Behavioral of bin2seg is
 
+
 begin
+
 p_7seg_decoder : process (bin) is
 begin
     case bin is

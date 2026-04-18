@@ -8,12 +8,12 @@ entity clk_en is
            ce : out STD_LOGIC);
            
 end clk_en;
-
+--architecture
 architecture Behavioral of clk_en is
 signal sig_cnt : integer range 0 to G_MAX-1;
 
     begin
-        process (clk) is
+    process (clk) is
     begin
         if rising_edge(clk) then  
             if rst = '1' then     

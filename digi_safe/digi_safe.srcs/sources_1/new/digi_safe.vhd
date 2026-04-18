@@ -16,7 +16,7 @@ end digi_safe;
 
 architecture Structural of digi_safe is
 
-    -- 1. VNITŘNÍ SIGNÁLY (Propojovací dráty mezi komponentami)
+    -- signals
     signal s_btn_press   : std_logic;
     signal s_shift_reg   : std_logic_vector(15 downto 0);
     signal s_ce_refresh  : std_logic;
@@ -27,8 +27,8 @@ architecture Structural of digi_safe is
 
 begin
 
-    -- INSTANCE 1: Debounce (Ošetření tlačítka)
-    debounce : entity work.debounce
+    -- Debounce (Ošetření tlačítka)
+    debounce : debounce
         port map (
             clk       => clk,
             rst       => rst,
@@ -36,8 +36,8 @@ begin
             btn_press => s_btn_press
         );
 
-    -- INSTANCE 2: Safe Control Logic (Mozek trezoru)
-    safe_control_logic : entity work.safe_control_logic
+    -- Safe Control Logic (trezor controller)
+    safe_control_logic : safe_control_logic
         port map (
             clk           => clk,
             rst           => rst,
@@ -49,8 +49,8 @@ begin
             led_red     => led_red
         );
 
-    -- INSTANCE 3: Clock Enable (Časování displeje)
-    clk_en : entity work.clk_en
+    -- Clock Enable (clock display)
+    clk_en : clk_en
         generic map ( G_MAX => 100_000 ) -- Pro 100MHz hodiny na Nexys
         port map (
             clk => clk,
@@ -58,8 +58,8 @@ begin
             ce  => s_ce_refresh
         );
 
-    -- INSTANCE 4: Display Mux Logic (Výběr cifry a anody)
-    display_driver : entity work.display_driver
+    -- Display driver
+    display_driver : display_driver
         port map (
             clk          => clk,
             rst          => rst,
@@ -69,12 +69,13 @@ begin
             anode     => an
         );
 
-    -- INSTANCE 5: Bin2Seg (Převodník na segmenty)
-    bin2seg : entity work.bin2seg
+    -- Bin2Seg (converse on segments)
+     bin2seg : bin2seg
         port map (
             bin => s_hex_digit,
             seg    => seg
         );
+
 
 end Structural;
 
