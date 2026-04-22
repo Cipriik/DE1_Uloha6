@@ -36,6 +36,6 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 | **dp** | out | `std_logic` | Decimal point (active-low) |
 | **anode** | out | `std_logic_vector(7 downto 0)` | 7-segment display anodes (AN7–AN0, active-low) |
 
-![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/365e246a7b02a11b814ce18ed331d33443140402/image.png)
+![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/446b895d32d7b08f2fb61433a62882deee007493/schema.png)
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/46c84bc1a03707b4ca8bbe6d2e278e0ed7f9b273/linter.png)
