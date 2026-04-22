@@ -34,7 +34,6 @@ set_property -dict { PACKAGE_PIN V10 IOSTANDARD LVCMOS33 } [get_ports {sw[15]}];
 # -----------------------------------------------
 # LEDs
 # -----------------------------------------------
-set_property PACKAGE_PIN H17 [get_ports {led[0]}];
 set_property PACKAGE_PIN K15 [get_ports {led[1]}];
 set_property PACKAGE_PIN N14 [get_ports {led[3]}];
 set_property PACKAGE_PIN R18 [get_ports {led[4]}];
@@ -80,11 +79,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {an[*]}]
 # -----------------------------------------------
 # RGB LEDs
 # -----------------------------------------------
-set_property -dict { PACKAGE_PIN N15 IOSTANDARD LVCMOS33 } [get_ports {led16_r}];
 set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports {led16_g}];
 set_property -dict { PACKAGE_PIN R12 IOSTANDARD LVCMOS33 } [get_ports {led16_b}];
 
-set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports {led17_r}];
 set_property -dict { PACKAGE_PIN R11 IOSTANDARD LVCMOS33 } [get_ports {led17_g}];
 set_property -dict { PACKAGE_PIN G14 IOSTANDARD LVCMOS33 } [get_ports {led17_b}];
 
@@ -108,13 +105,6 @@ set_property -dict { PACKAGE_PIN E17 IOSTANDARD LVCMOS33 } [get_ports {ja[8]}];
 set_property -dict { PACKAGE_PIN F18 IOSTANDARD LVCMOS33 } [get_ports {ja[9]}];
 set_property -dict { PACKAGE_PIN G18 IOSTANDARD LVCMOS33 } [get_ports {ja[10]}];
 
-# Priradenie pinu a napäťového štandardu pre led_green
-set_property PACKAGE_PIN U16 [get_ports led_green]
-set_property IOSTANDARD LVCMOS33 [get_ports led_green]
-
-# To isté pre ostatné porty...
-set_property PACKAGE_PIN E19 [get_ports led_red]
-set_property IOSTANDARD LVCMOS33 [get_ports led_red]
 
 set_property PACKAGE_PIN W19 [get_ports btn_in]
 set_property IOSTANDARD LVCMOS33 [get_ports btn_in]
@@ -125,8 +115,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports rst]
 ## Tlačidlo (stredné tlačidlo BTNC)
 set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { btn_in }];
 
-## Červená LED (LED 1)
-set_property -dict { PACKAGE_PIN J13   IOSTANDARD LVCMOS33 } [get_ports { led_red }];
-
 ## Reset (Tlačidlo hore BTNU)
 set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports { rst }];
+
+## RGB LED (LED16)
+set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { led_green }]; # Zelená
+set_property -dict { PACKAGE_PIN N16   IOSTANDARD LVCMOS33 } [get_ports { led_red }];   # Červená
