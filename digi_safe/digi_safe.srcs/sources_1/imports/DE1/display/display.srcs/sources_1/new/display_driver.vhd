@@ -15,7 +15,16 @@ entity display_driver is
 end display_driver;
 
 architecture Behavioral of display_driver is
-    signal s_mux_cnt : unsigned(1 downto 0) := "00";
+
+   component bin2seg is
+        port (
+            binary : in  std_logic_vector(3 downto 0);
+            seg    : out std_logic_vector(6 downto 0)
+        );
+    end component;
+
+signal s_mux_cnt : unsigned(1 downto 0) := "00";
+signal s_hex_digit : std_logic_vector(3 downto 0);
 begin
     p_mux_cnt : process(clk)
     begin
@@ -49,4 +58,10 @@ begin
                 hex_digit <= x"0";
         end case;
     end process;
+
+    bin2seg_inst : bin2seg
+        port map (
+            bin => s_hex_digit,  
+            seg    => seg        
+        );
 end Behavioral;

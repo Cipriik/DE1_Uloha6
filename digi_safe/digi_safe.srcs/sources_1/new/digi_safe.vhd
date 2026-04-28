@@ -116,11 +116,7 @@ begin
             anode      => an
         );
 
-    bin2seg_inst : bin2seg
-        port map (
-            bin => s_hex_digit,
-            seg => seg
-        );
+    
 
 end Structural;
 
