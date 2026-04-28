@@ -16,19 +16,69 @@ end digi_safe;
 
 architecture Structural of digi_safe is
 
-    -- signals
+
+    component debounce is
+        port (
+            clk       : in  std_logic;
+            rst       : in  std_logic;
+            btn_in    : in  std_logic;
+            btn_press : out std_logic
+        );
+    end component;
+
+    component safe_control_logic is
+        port (
+            clk         : in  std_logic;
+            rst         : in  std_logic;
+            btn_press   : in  std_logic;
+            sw          : in  std_logic_vector(3 downto 0);
+            secret_code : in  std_logic_vector(15 downto 0);
+            shift_reg   : out std_logic_vector(15 downto 0);
+            led_green   : out std_logic;
+            led_red     : out std_logic
+        );
+    end component;
+
+    component clk_en is
+        generic (
+            G_MAX : integer := 2
+        );
+        port (
+            clk : in  std_logic;
+            rst : in  std_logic;
+            ce  : out std_logic
+        );
+    end component;
+
+    component display_driver is
+        port (
+            clk        : in  std_logic;
+            rst        : in  std_logic;
+            ce_refresh : in  std_logic;
+            data       : in  std_logic_vector(15 downto 0);
+            hex_digit  : out std_logic_vector(3 downto 0);
+            anode      : out std_logic_vector(7 downto 0)
+        );
+    end component;
+
+    component bin2seg is
+        port (
+            bin : in  std_logic_vector(3 downto 0);
+            seg : out std_logic_vector(6 downto 0)
+        );
+    end component;
+
     signal s_btn_press   : std_logic;
     signal s_shift_reg   : std_logic_vector(15 downto 0);
     signal s_ce_refresh  : std_logic;
     signal s_hex_digit   : std_logic_vector(3 downto 0);
 
-    -- Heslo (můžeš ho definovat tady a poslat do komponenty)
-    constant C_SECRET : std_logic_vector(15 downto 0) := x"6967";
+    constant C_SECRET : std_logic_vector(15 downto 0) := x"1234";
 
 begin
 
-    -- Debounce (Ošetření tlačítka)
-    debounce : debounce
+
+    debounce_inst : debounce
         port map (
             clk       => clk,
             rst       => rst,
@@ -36,11 +86,10 @@ begin
             btn_press => s_btn_press
         );
 
-    -- Safe Control Logic (trezor controller)
-    safe_control_logic : safe_control_logic
+    safe_control_logic_inst : safe_control_logic
         port map (
-            clk           => clk,
-            rst           => rst,
+            clk         => clk,
+            rst         => rst,
             btn_press   => s_btn_press,
             sw          => sw,
             secret_code => C_SECRET,
@@ -49,33 +98,29 @@ begin
             led_red     => led_red
         );
 
-    -- Clock Enable (clock display)
-    clk_en : clk_en
-        generic map ( G_MAX => 100_000 ) -- Pro 100MHz hodiny na Nexys
+    clk_en_inst : clk_en
+        generic map ( G_MAX => 100_000 )
         port map (
             clk => clk,
             rst => rst,
             ce  => s_ce_refresh
         );
 
-    -- Display driver
-    display_driver : display_driver
+    display_driver_inst : display_driver
         port map (
-            clk          => clk,
-            rst          => rst,
+            clk        => clk,
+            rst        => rst,
             ce_refresh => s_ce_refresh,
             data       => s_shift_reg,
             hex_digit  => s_hex_digit,
-            anode     => an
+            anode      => an
         );
 
-    -- Bin2Seg (converse on segments)
-     bin2seg : bin2seg
+    bin2seg_inst : bin2seg
         port map (
             bin => s_hex_digit,
-            seg    => seg
+            seg => seg
         );
-
 
 end Structural;
 

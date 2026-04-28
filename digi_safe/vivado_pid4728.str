@@ -1,0 +1,850 @@
+/*
+
+AMD Vivado v2025.2 (64-bit) [Major: 2025, Minor: 2]
+SW Build: 6299465 on Fri Nov 14 19:35:11 GMT 2025
+IP Build: 6300035 on Fri Nov 14 10:48:45 MST 2025
+IP Build: 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+Process ID (PID): 4728
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Apr 22 16:09:22 CEST 2026
+Time zone: 	Central European Standard Time (Europe/Prague)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1032
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.5 64-bit
+
+Java home: 	C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64/jre21.0.5_11
+Java executable: 	C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64/jre21.0.5_11/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms812m, -Xmx6144m, -Xss10m]
+Java initial memory (-Xms): 	812 MB
+Java maximum memory (-Xmx):	 6 GB
+
+User name: 	270925
+User home directory: C:/Users/270925
+User working directory: C:/Users/270925/Desktop/DE1_Uloha6/digi_safe
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Appz/AMDDesignTools/2025.2
+HDI_APPROOT: C:/Appz/AMDDesignTools/2025.2/Vivado
+RDI_DATADIR: C:/Appz/AMDDesignTools/2025.2/Vivado/data
+RDI_BINDIR: C:/Appz/AMDDesignTools/2025.2/Vivado/bin
+
+Vivado preferences file: C:/Users/270925/AppData/Roaming/Xilinx/Vivado/2025.2/vivado.xml
+Vivado preferences directory: C:/Users/270925/AppData/Roaming/Xilinx/Vivado/2025.2/
+Vivado layouts directory: C:/Users/270925/AppData/Roaming/Xilinx/Vivado/2025.2/data/layouts
+PlanAhead jar file: 	C:/Appz/AMDDesignTools/2025.2/Vivado/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/vivado.log
+Vivado journal file: 	C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/vivado.jou
+Engine tmp dir: 	C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/.Xil/Vivado-4728-PC-637
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+LEVEL_ZERO_V1_SDK_PATH: C:\Program Files\LevelZeroSDK\1.24.0\
+RDI_APPROOT: C:/Appz/AMDDesignTools/2025.2/Vivado
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent12080 "C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Appz/AMDDesignTools/2025.2
+RDI_BINDIR: C:/Appz/AMDDesignTools/2025.2/Vivado/bin
+RDI_BINROOT: C:/Appz/AMDDesignTools/2025.2/Vivado/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Appz/AMDDesignTools/2025.2/Vivado/data
+RDI_INSTALLROOT: C:/Appz/AMDDesignTools
+RDI_INSTALLVER: Vivado
+RDI_INSTALLVERSION: 2025.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64/javafx-sdk-21.0.5
+RDI_JAVAROOT: C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64/jre21.0.5_11
+RDI_JAVA_VERSION: 21.0.5_11
+RDI_LIBDIR: C:/Appz/AMDDesignTools/2025.2/Vivado/lib/win64.o
+RDI_MINGW_LIB: C:/Appz/AMDDesignTools/2025.2/Vivado\tps\mingw\6.2.0\win64.o\nt\bin;C:/Appz/AMDDesignTools/2025.2/Vivado\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Appz/AMDDesignTools/2025.2/Vitis/bin;C:/Appz/AMDDesignTools/2025.2/Vivado/ids_lite/ISE/bin/nt64;C:/Appz/AMDDesignTools/2025.2/Vivado/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Appz/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0
+RDI_PYTHON3_VERSION: 3.13.0
+RDI_PYTHONHOME: C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0
+RDI_PYTHONPATH: C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0;C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0\bin;C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0\lib;C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Appz/AMDDesignTools/2025.2/Vivado\tps\win64\python-3.13.0\lib
+RDI_SESSION_INFO: C:\Users\270925\Desktop\DE1_Uloha6\digi_safe:PC-637-22.04.2026_16-09-04,38
+RDI_SHARED_DATA: C:/Appz/AMDDesignTools/SharedData/2025.2/data
+RDI_TPS_ROOT: C:/Appz/AMDDesignTools/2025.2/Vivado/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: C:/Appz/AMDDesignTools/2025.2/Vivado/ids_lite/ISE
+XILINX_DSP: C:/Appz/AMDDesignTools/2025.2/Vivado/ids_lite/ISE
+XILINX_HLS: C:/Appz/AMDDesignTools/2025.2/Vitis
+XILINX_PLANAHEAD: C:/Appz/AMDDesignTools/2025.2/Vivado
+XILINX_SDK: C:/Appz/AMDDesignTools/2025.2/Vitis
+XILINX_VITIS: C:/Appz/AMDDesignTools/2025.2/Vitis
+XILINX_VIVADO: C:/Appz/AMDDesignTools/2025.2/Vivado
+_RDI_BINROOT: C:\Appz\AMDDesignTools\2025.2\Vivado\bin
+_RDI_CWD: C:\Users\270925\Desktop\DE1_Uloha6\digi_safe
+
+
+GUI allocated memory:	812 MB
+GUI max memory:		6,144 MB
+Engine allocated memory: 897 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.xpr. Version: Vivado v2025.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 933 MB. GUI used memory: 67 MB. Current time: 4/22/26, 4:09:23 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 128 MB (+131274kb) [00:00:15]
+// [Engine Memory]: 1,009 MB (+906672kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  2749 ms.
+// Tcl Message: open_project C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.gen/sources_1'. 
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Appz/AMDDesignTools/2025.2/Vivado/data/ip'. 
+// Project name: digi_safe; location: C:/Users/270925/Desktop/DE1_Uloha6/digi_safe; part: xc7a50ticsg324-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1688.570 ; gain = 261.668 
+dismissDialog("Open Project"); // bk (Open Project Progress)
+// [Engine Memory]: 1,062 MB (+2300kb) [00:00:21]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 139 MB (+4790kb) [00:00:23]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // d (PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS)
+selectButton(PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, "Force up-to-date"); // h (PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE)
+// Tcl Message: set_property needs_refresh false [get_runs synth_1] 
+// Tcl Message: set_property needs_refresh false [get_runs impl_1] 
+// [GUI Memory]: 146 MB (+980kb) [00:00:40]
+selectTab((HResource) null, (HResource) null, "Reports", 3); // ab
+// HMemoryUtils.trashcanNow. Engine heap size: 1,062 MB. GUI used memory: 73 MB. Current time: 4/22/26, 4:09:53 PM CEST
+selectTab((HResource) null, (HResource) null, "Log", 2); // ab
+selectTab((HResource) null, (HResource) null, "Messages", 1); // ab
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cfg_tb_digi_safe(tb_digi_safe - tb) (digi_safe_tb.vhd)]", 13); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 17); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, debounce_counter_top.dcp]", 20, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ap (PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:04s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:06s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,062 MB. GUI used memory: 75 MB. Current time: 4/22/26, 4:10:33 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ap (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/270925/Desktop/DE1/debounce/debounce.srcs/sources_1/new/debounce.vhd");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // d (dialog0)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Import Source Conflicts"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Import Source Conflicts"); // aQ (dialog2)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse C:/Users/270925/Desktop/DE1/debounce/debounce.srcs/sources_1/new/debounce.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:26s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,080 MB. GUI used memory: 82 MB. Current time: 4/22/26, 4:10:53 PM CEST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:28s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:30s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 01m:32s
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,081 MB. GUI used memory: 80 MB. Current time: 4/22/26, 4:11:13 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ap (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/270925/Desktop/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // d (dialog3)
+selectRadioButton(PAResourceQtoS.SrcConflictDialog_OVERWRITE_EXISTING_FILES, "Overwrite existing files"); // a (PAResourceQtoS.SrcConflictDialog_OVERWRITE_EXISTING_FILES)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Import Source Conflicts"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Import Source Conflicts"); // aQ (dialog5)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse C:/Users/270925/Desktop/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:10s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:12s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:14s
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "4"); // h (PAResourceEtoH.FileSetPanel_MESSAGES)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:16s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// [GUI Memory]: 154 MB (+752kb) [00:02:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,088 MB. GUI used memory: 84 MB. Current time: 4/22/26, 4:11:53 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 8, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ap (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog6)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/counter/counter.srcs/sources_1/new/counter.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/counter/counter.srcs/sources_1/new/counter.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:44s
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 02m:46s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ap (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd");
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 86 MB. Current time: 4/22/26, 4:12:33 PM CEST
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // d (dialog7)
+// Tcl Message: add_files -norecurse C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 85 MB. Current time: 4/22/26, 4:13:13 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 85 MB. Current time: 4/22/26, 4:13:53 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 83 MB. Current time: 4/22/26, 4:14:33 PM CEST
+// Elapsed time: 117 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, "Edit Simulation Sets..."); // ap (PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, edit_simulation_sets_menu)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS
+dismissDialog("Add Sources"); // ax (dialog9)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ap (PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, show_source_menu)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+selectCodeEditor("digi_safe.vhd", 468, 339); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 365, 381); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 308, 359); // ae (digi_safe.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,096 MB. GUI used memory: 85 MB. Current time: 4/22/26, 4:15:13 PM CEST
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "4"); // h (PAResourceEtoH.FileSetPanel_MESSAGES)
+// [GUI Memory]: 163 MB (+569kb) [00:06:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,096 MB. GUI used memory: 86 MB. Current time: 4/22/26, 4:15:53 PM CEST
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 20-1318] Duplicate Design Unit 'bin2seg(Behavioral)' found in library 'xil_defaultlib'. 	(Active) Duplicate found at line 10 of file C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd. Duplicate found in file C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/bin2seg.vhd. ]", 3, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [filemgmt 20-1318] Duplicate Design Unit 'bin2seg(Behavioral)' found in library 'xil_defaultlib'. 	(Active) Duplicate found at line 10 of file C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd. Duplicate found in file C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/bin2seg.vhd. ]", 5, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\imports\DE1\segment\segment.srcs\sources_1\new\bin2seg.vhd;-;;-;16;-;line;-;10;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bin2seg(Behavioral) (bin2seg.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog10)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/bin2seg.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/bin2seg.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 06m:48s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 06m:50s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ah (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ah (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // am (PAResourceItoN.MainMenuMgr_CHECKPOINT, Checkpoint)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // am (PAResourceItoN.MainMenuMgr_IP, IP)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // am (PAResourceItoN.MainMenuMgr_TEXT_EDITOR, Text Editor)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectCodeEditor("bin2seg.vhd (2)", 444, 376); // ae (bin2seg.vhd (2))
+selectCodeEditor("bin2seg.vhd (2)", 561, 361); // ae (bin2seg.vhd (2))
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 86 MB. Current time: 4/22/26, 4:16:33 PM CEST
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // H (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ap (PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, show_source_menu)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 85 MB. Current time: 4/22/26, 4:17:14 PM CEST
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 86 MB. Current time: 4/22/26, 4:17:54 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bin2seg.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // H (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 87 MB. Current time: 4/22/26, 4:18:34 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g (RDIResource.PropertiesView_TABBED_PANE)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g (RDIResource.PropertiesView_TABBED_PANE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 88 MB. Current time: 4/22/26, 4:19:14 PM CEST
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Add Source Files"); // JButton (FileChooser.upFolderIcon)
+// Elapsed time: 11 seconds
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Add Source Files"); // JButton (FileChooser.upFolderIcon)
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): FALSE
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // d (dialog11)
+// Tcl Message: add_files -norecurse C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd 
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-12] File 'C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd' cannot be added to the project because it already exists in the project, skipping this file. ]", 3, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 88 MB. Current time: 4/22/26, 4:19:54 PM CEST
+selectButton((HResource) null, "Sources_FileSetView.filterMissingAction"); // w (Sources_FileSetView.filterMissingAction): TRUE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Missing Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Missing Simulation Sources]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Missing Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton((HResource) null, "Sources_FileSetView.filterMissingAction"); // w (Sources_FileSetView.filterMissingAction): FALSE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, "Edit Constraints Sets..."); // ap (PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, edit_constraint_sets_menu)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "nexys.xdc ; C:\\Users\\270925\\Desktop\\DE1_Uloha6\\digi_safe\\digi_safe.srcs\\constrs_1\\new", 0, "C:\\Users\\270925\\Desktop\\DE1_Uloha6\\digi_safe\\digi_safe.srcs\\constrs_1\\new", 1); // f.d (PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE)
+// 'at' command handler elapsed time: 4 seconds
+dismissDialog("Edit Constraints Sets"); // at.a (dialog13)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 86 MB. Current time: 4/22/26, 4:20:34 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, bin2seg.vhd]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ap (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog14)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:16s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, clk_en.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:18s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, safe_control_logic.vhd]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, clk_en.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog15)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:34s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, safe_control_logic.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:36s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, display_driver.vhd]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, display_driver.vhd]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, display_driver.vhd]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog16)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:40s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, debounce.vhd]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog17)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:44s
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 11m:46s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 87 MB. Current time: 4/22/26, 4:21:14 PM CEST
+selectCodeEditor("digi_safe.vhd", 143, 403); // ae (digi_safe.vhd)
+typeControlKey((HResource) null, "digi_safe.vhd", 'c'); // ae (digi_safe.vhd)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 12m:08s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 12m:10s
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, safe_control_logic.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, safe_control_logic.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, safe_control_logic.vhd]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:21:54 PM CEST
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/bin2seg.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+// Elapsed time: 14 seconds
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd");
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; bin2seg.vhd ; xil_defaultlib ; C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new", 0, "bin2seg.vhd", 2); // aP (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): TRUE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,110 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:22:34 PM CEST
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 46 seconds
+dismissDialog("Add Sources"); // d (dialog18)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/segment/segment.srcs/sources_1/new/bin2seg.vhd C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd} 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:12s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:14s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:16s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safe_control_logic(Behavioral) (safe_control_logic.vhd)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:18s
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd), clock_0 : clk_en(Behavioral) (clk_en.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safe_control_logic(Behavioral) (safe_control_logic.vhd)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safe_control_logic(Behavioral) (safe_control_logic.vhd)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digi_safe.vhd", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "digi_safe.vhd", 'v'); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:36s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 13m:38s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce : xil_defaultlib.debounce(Behavioral)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic : xil_defaultlib.safe_control_logic(Behavioral)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), clk_en : xil_defaultlib.clk_en(Behavioral)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), display_driver : xil_defaultlib.display_driver(Behavioral)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), bin2seg : xil_defaultlib.bin2seg(Behavioral)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:23:15 PM CEST
+selectButton(RDIResourceCommand.RDICommands_UNDO, "undo"); // C (RDIResourceCommand.RDICommands_UNDO, undo)
+selectButton(RDIResourceCommand.RDICommands_UNDO, "undo"); // C (RDIResourceCommand.RDICommands_UNDO, undo)
+selectButton(RDIResourceCommand.RDICommands_UNDO, "undo"); // C (RDIResourceCommand.RDICommands_UNDO, undo)
+selectCodeEditor("digi_safe.vhd", 108, 338); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 130, 409); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 14m:04s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 14m:06s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce(Behavioral) (debounce.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("digi_safe.vhd", 36, 409); // ae (digi_safe.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:23:55 PM CEST
+// Elapsed time: 50 seconds
+typeControlKey((HResource) null, "digi_safe.vhd", 'v'); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 15m:06s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 15m:08s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:24:36 PM CEST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:25:16 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:25:56 PM CEST
+// Elapsed time: 90 seconds
+selectCodeEditor("digi_safe.vhd", 106, 417); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 1, 10); // ae (digi_safe.vhd)
+typeControlKey((HResource) null, "digi_safe.vhd", 'c'); // ae (digi_safe.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:26:37 PM CEST
+// Elapsed time: 26 seconds
+selectCodeEditor("digi_safe.vhd", 145, 458); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 158, 453); // ae (digi_safe.vhd)
+typeControlKey((HResource) null, "digi_safe.vhd", 'c'); // ae (digi_safe.vhd)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "digi_safe.vhd", 'v'); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 17m:35s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 17m:37s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 17m:39s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: The operation completed successfully.  
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 17m:41s
+// [Engine Memory]: 1,118 MB (+3643kb) [00:17:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 92 MB. Current time: 4/22/26, 4:27:17 PM CEST
+// Elapsed time: 27 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: The operation completed successfully.. . ]", 6, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: The operation completed successfully.. . ]", 6, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: The operation completed successfully.. . ]", 6, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce_inst : debounce(Behavioral) (debounce.vhd)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), debounce_inst : debounce(Behavioral) (debounce.vhd)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("digi_safe.vhd", 336, 225); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 440, 228); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 140, 126); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 18m:23s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 18m:25s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:27:57 PM CEST
+// Elapsed time: 34 seconds
+selectCodeEditor("digi_safe.vhd", 288, 407); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 417, 213); // ae (digi_safe.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:28:38 PM CEST
+typeControlKey((HResource) null, "digi_safe.vhd", 'v'); // ae (digi_safe.vhd)
+selectButton("OptionPane.button", "Yes", "Confirm Paste"); // JButton (OptionPane.button)
+selectCodeEditor("digi_safe.vhd", 347, 227); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 361, 257); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 343, 233); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 312, 232); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 396, 277); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 19m:23s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: The operation completed successfully.  
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 19m:25s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:29:18 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:29:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 91 MB. Current time: 4/22/26, 4:30:38 PM CEST
+// Elapsed time: 117 seconds
+selectCodeEditor("digi_safe.vhd", 198, 313); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 193, 300); // ae (digi_safe.vhd)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic_inst : safe_control_logic(Behavioral) (safe_control_logic.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd), safe_control_logic_inst : safe_control_logic(Behavioral) (safe_control_logic.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("safe_control_logic.vhd", 365, 303); // ae (safe_control_logic.vhd)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digi_safe(Structural) (digi_safe.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("digi_safe.vhd", 155, 324); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 152, 306); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 146, 291); // ae (digi_safe.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:31:18 PM CEST
+selectCodeEditor("digi_safe.vhd", 143, 303); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 137, 315); // ae (digi_safe.vhd)
+typeControlKey((HResource) null, "digi_safe.vhd", 'v'); // ae (digi_safe.vhd)
+selectButton("OptionPane.button", "Yes", "Confirm Paste"); // JButton (OptionPane.button)
+selectCodeEditor("digi_safe.vhd", 240, 317); // ae (digi_safe.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safe_control_logic.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "safe_control_logic.vhd", 'v'); // ae (safe_control_logic.vhd)
+selectButton("OptionPane.button", "Yes", "Confirm Paste"); // JButton (OptionPane.button)
+selectCodeEditor("safe_control_logic.vhd", 8, 312); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 23, 318); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 29, 319); // ae (safe_control_logic.vhd)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digi_safe.vhd", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safe_control_logic.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:31:58 PM CEST
+selectCodeEditor("safe_control_logic.vhd", 418, 314); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 159, 315); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 307, 314); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 304, 238); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 297, 227); // ae (safe_control_logic.vhd)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digi_safe.vhd", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:32:38 PM CEST
+selectCodeEditor("digi_safe.vhd", 461, 262); // ae (digi_safe.vhd)
+selectCodeEditor("digi_safe.vhd", 440, 269); // ae (digi_safe.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 23m:29s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 23m:31s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:33:19 PM CEST
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safe_control_logic.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 17 seconds
+selectCodeEditor("safe_control_logic.vhd", 252, 330); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 290, 331); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 173, 351); // ae (safe_control_logic.vhd)
+selectCodeEditor("safe_control_logic.vhd", 339, 351); // ae (safe_control_logic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:33:59 PM CEST
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digi_safe.vhd", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safe_control_logic.vhd", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 24m:55s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 24m:57s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 93 MB. Current time: 4/22/26, 4:34:39 PM CEST

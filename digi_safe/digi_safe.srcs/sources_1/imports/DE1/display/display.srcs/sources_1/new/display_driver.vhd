@@ -17,7 +17,6 @@ end display_driver;
 architecture Behavioral of display_driver is
     signal s_mux_cnt : unsigned(1 downto 0) := "00";
 begin
-    -- 2-bit čítač pro přepínání displejů
     p_mux_cnt : process(clk)
     begin
         if rising_edge(clk) then
