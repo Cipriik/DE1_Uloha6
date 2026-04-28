@@ -78,7 +78,7 @@ architecture Structural of digi_safe is
 begin
 
 
-    debounce_inst : debounce
+    debounce_0 : debounce
         port map (
             clk       => clk,
             rst       => rst,
@@ -86,7 +86,7 @@ begin
             btn_press => s_btn_press
         );
 
-    safe_control_logic_inst : safe_control_logic
+    safe_control_logic_0 : safe_control_logic
         port map (
             clk         => clk,
             rst         => rst,
@@ -98,7 +98,7 @@ begin
             led_red     => led_red
         );
 
-    clk_en_inst : clk_en
+    clk_en_0 : clk_en
         generic map ( G_MAX => 100_000 )
         port map (
             clk => clk,
@@ -106,7 +106,7 @@ begin
             ce  => s_ce_refresh
         );
 
-    display_driver_inst : display_driver
+    display_driver_0 : display_driver
         port map (
             clk        => clk,
             rst        => rst,

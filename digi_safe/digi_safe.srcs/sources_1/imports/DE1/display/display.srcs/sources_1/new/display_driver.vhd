@@ -59,9 +59,11 @@ begin
         end case;
     end process;
 
-    bin2seg_inst : bin2seg
+    bin2seg_0 : bin2seg
         port map (
             bin => s_hex_digit,  
             seg    => seg        
         );
+
+    dp <= '1';
 end Behavioral;

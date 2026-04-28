@@ -41,8 +41,21 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/46c84bc1a03707b4ca8bbe6d2e278e0ed7f9b273/linter.png)
 
 Zde popisujeme soubory projektu:
+
 Top projektu
+
 [digi_safe.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd)
+
+Testbench projektu
+
+[digi_safe_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/digi_safe_tb.vhd)
+
+Inputy:
+clk - 100 MHz systémový clock z desky Nexys A7-50T
+rst -  Globální reset tlačítko pro 
+btnu - 
+btnc - 
+sw - 
 
 
 
