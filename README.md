@@ -39,3 +39,19 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 ![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/446b895d32d7b08f2fb61433a62882deee007493/schema.png)
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/46c84bc1a03707b4ca8bbe6d2e278e0ed7f9b273/linter.png)
+
+clk_en_tb
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/clk_en_tb.png)
+
+debounce_tb
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/debounce_tb.png)
+
+digi_safe_tb
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/digi_safe_tb.png)
+
+safe_control_tb
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/safe_control_logic_tb.png)
