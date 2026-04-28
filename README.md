@@ -67,8 +67,16 @@ Na snímku je zachycena fáze po uvolnění resetu, kdy systém čeká na stabil
 
 digi_safe_tb
 
+Simulace zde zachycuje počáteční fázi provozu modulu digitálního trezoru, přičemž se zaměřuje na proces inicializace a stabilitu systému v klidovém stavu.
+Celková délka zobrazené simulace je 1000ns, s periodou clocku nastavenou na 100ns. 
+Ukázka začíná aktivací resetovacího signálu rst, který je držen v logické jedničce po dobu prvního hodinového cyklu. Během této fáze dochází k odstranění nedefinovaných stavů na výstupních signálech led_green a led_red, které se následně ustálí na logické nule. Vstupy systému, jsou řešeny přepínači sw[3:0] a potvrzovacím tlačítkem btn_in (na desce nexys btnc), jsou v této fázi simulace udržovány na nulových hodnotách. To umožňuje ověřit chování systému v tzv. "IDLE" stavu. Výstupy určené pro sedmisegmentovku, konkrétně sběrnice seg[6:0] s hodnotou 01 a anoda an[7:0] s hexadecimální hodnotou FE, indikují aktivitu zobrazení. Hodnota FE (binárně 11111110) značí, že je aktivní pouze první pozice displeje. Z časového průběhu vyplývá, že celý systém pracuje v plné synchronizaci s náběžnou hranou clocku.
+
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/digi_safe_tb.png)
 
 safe_control_tb
+
+Zde simulace ověřuje součinnost 16bitového posuvného registru a porovnávací logiky. Po odeznění počátečního resetu, který bezpečně nuluje veškeré vnitřní stavy, je systém připraven k postupnému načítání dat. Vstupní 4bitová hodnota ze sběrnice sw[3:0] je připravena k sériovému posunu do registru shift_reg[15:0].
+
+V každém taktu probíhá paralelní porovnání obsahu uživatelského registru s referenční hodnotou v secret_reg[15:0]. Průběh signálů potvrzuje, že výstupy led_green a led_red jsou drženy v logické nule až do okamžiku finálního vyhodnocení. Tato konfigurace zaručuje, že nedojde k falešnému povolení přístupu během procesu posouvání bitů v registru. 
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/safe_control_logic_tb.png)
