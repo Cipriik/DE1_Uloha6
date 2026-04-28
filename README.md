@@ -40,9 +40,21 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/46c84bc1a03707b4ca8bbe6d2e278e0ed7f9b273/linter.png)
 
+Zde popisujeme soubory projektu:
+Top projektu
+[digi_safe.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd)
+
+
+
+
+
+
+
+
+
 Zde v tomto projektu jsme udělali tzv. Testbenche s cílem potvrdit správnost implementované logiky, v oblasti generování řídicích signálů a časové synchronizace. Testbench zde vlastně slouží pro simulaci hardwarové části
 
-clk_en_tb
+## clk_en_tb
 
 Testbench generátoru systémového hodinového signálu clk s pevně definovanou periodou TbPeriod, odpovídá cílové pracovní frekvenci aplikace. 
 
@@ -54,26 +66,32 @@ Výstupy ze simulátoru generují pulzy s přesnou periodicitou a bez fázového
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/clk_en_tb.png)
 
-debounce_tb
+## debounce_tb
 
 Testování pro pro zamezení tzv. debouncingu bylo zaměřeno na ověření správné detekce stabilního stavu vstupu a generování relevantních výstupních příznaků. 
 Testovací proces začíná ukázkou signálu rst, který po dobu prvních 40 ns drží vnitřní registry v nulovém stavu, což je v simulaci ukázáno přechodem z neznámých hodnot do definované logické nuly. 
 Po uvolnění resetu pracuje modul synchronně s hlavními hodinami clk o periodě 100 ns.
 
 Z naměřených průběhů je patrné, že testbench simuluje přechodový jev na vstupním portu btn_in. Hlavním cílem simulace je prokázat, že výstupy btn_state (indikující aktuální stabilní stav tlačítka) a btn_press (krátký pulz signalizující okamžik stisku) reagují pouze na vstupy, které vykazují dostatečnou stabilitu v čase. 
-Na snímku je zachycena fáze po uvolnění resetu, kdy systém čeká na stabilizaci vstupu předtím, než změní stav výstupních signálů. Synchronizace všech změn s náběžnou hranou hodin potvrzuje eliminace mechanických zákmitů kritická pro správnou funkci uživatelského rozhraní. Výsledná simulace ukazuje, že modul efektivně filtruje krátké parazitní jevy a poskytuje čistý, časově zarovnaný signál pro další zpracování v FPGA.
+
+Na snímku je zachycena fáze po uvolnění resetu, kdy systém čeká na stabilizaci vstupu předtím, než změní stav výstupních signálů. Synchronizace všech změn s náběžnou hranou hodin potvrzuje eliminace mechanických zákmitů kritická pro správnou funkci uživatelského rozhraní. 
+
+Výsledná simulace ukazuje, že modul efektivně filtruje krátké parazitní jevy a poskytuje čistý, časově zarovnaný signál pro další zpracování v FPGA.
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/debounce_tb.png)
 
-digi_safe_tb
+## digi_safe_tb
 
 Simulace zde zachycuje počáteční fázi provozu modulu digitálního trezoru, přičemž se zaměřuje na proces inicializace a stabilitu systému v klidovém stavu.
-Celková délka zobrazené simulace je 1000ns, s periodou clocku nastavenou na 100ns. 
-Ukázka začíná aktivací resetovacího signálu rst, který je držen v logické jedničce po dobu prvního hodinového cyklu. Během této fáze dochází k odstranění nedefinovaných stavů na výstupních signálech led_green a led_red, které se následně ustálí na logické nule. Vstupy systému, jsou řešeny přepínači sw[3:0] a potvrzovacím tlačítkem btn_in (na desce nexys btnc), jsou v této fázi simulace udržovány na nulových hodnotách. To umožňuje ověřit chování systému v tzv. "IDLE" stavu. Výstupy určené pro sedmisegmentovku, konkrétně sběrnice seg[6:0] s hodnotou 01 a anoda an[7:0] s hexadecimální hodnotou FE, indikují aktivitu zobrazení. Hodnota FE (binárně 11111110) značí, že je aktivní pouze první pozice displeje. Z časového průběhu vyplývá, že celý systém pracuje v plné synchronizaci s náběžnou hranou clocku.
+Celková délka zobrazené simulace je 1000ns, s periodou clocku nastavenou na 100ns.
+
+Ukázka začíná aktivací resetovacího signálu rst, který je držen v logické jedničce po dobu prvního hodinového cyklu. Během této fáze dochází k odstranění nedefinovaných stavů na výstupních signálech led_green a led_red, které se následně ustálí na logické nule. Vstupy systému, jsou řešeny přepínači sw[3:0] a potvrzovacím tlačítkem btn_in (na desce nexys btnc), jsou v této fázi simulace udržovány na nulových hodnotách. 
+
+To umožňuje ověřit chování systému v tzv. "IDLE" stavu. Výstupy určené pro sedmisegmentovku, konkrétně sběrnice seg[6:0] s hodnotou 01 a anoda an[7:0] s hexadecimální hodnotou FE, indikují aktivitu zobrazení. Hodnota FE (binárně 11111110) značí, že je aktivní pouze první pozice displeje. Z časového průběhu vyplývá, že celý systém pracuje v plné synchronizaci s náběžnou hranou clocku.
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/digi_safe_tb.png)
 
-safe_control_tb
+## safe_control_tb
 
 Zde simulace ověřuje součinnost 16bitového posuvného registru a porovnávací logiky. Po odeznění počátečního resetu, který bezpečně nuluje veškeré vnitřní stavy, je systém připraven k postupnému načítání dat. Vstupní 4bitová hodnota ze sběrnice sw[3:0] je připravena k sériovému posunu do registru shift_reg[15:0].
 
