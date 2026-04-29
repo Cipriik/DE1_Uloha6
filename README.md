@@ -51,12 +51,44 @@ Testbench projektu
 [digi_safe_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/digi_safe_tb.vhd)
 
 Inputy:
-clk - 100 MHz systémový clock z desky Nexys A7-50T
-rst -  Globální reset tlačítko pro 
-btnu - 
-btnc - 
-sw - 
+* clk - 100 MHz systémový clock z desky Nexys A7-50T
+* rst -  Globální reset tlačítko (na desce také btnu) 
+* btnc -  tlačítko, které slouží pro shiftování přes sloty
+* sw - nastavování čísel pro heslo (binárně)
 
+Outputy
+* led_green - led dioda která se rozsvítí při správném zadání hesla
+* led_red - led dioda která se rozsvítí při špatném zadání hesla
+* seg - 7 segmentový display
+* an - anody
+
+clk_en
+
+[clk_en_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd)
+
+[clk_en](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd)
+
+Inputy
+* clk - systémový clock
+* rst -  Globální reset
+Outputy
+* ce - výstup clk_en
+
+safe_control_logic
+
+[safe_control_logic.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
+
+[safe_control_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
+
+Inputy
+* clk - systémový clock
+* rst -  Globální reset
+* sw - switch
+* secret_code - tajný kód námi nastavený
+Outputy
+* shift_reg - shiftování registru
+* led_green - výstup zelené led diody
+* led_red - výstup červené led diody
 
 
 
