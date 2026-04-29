@@ -56,18 +56,18 @@ set rt::rc [catch {
     rt::set_parameter enableIncremental true
     rt::set_parameter markDebugPreservationLevel "enable"
     set rt::reportTiming false
-    rt::set_parameter elaborateOnly true
-    rt::set_parameter elaborateRtl true
-    rt::set_parameter eliminateRedundantBitOperator false
+    rt::set_parameter elaborateOnly false
+    rt::set_parameter elaborateRtl false
+    rt::set_parameter eliminateRedundantBitOperator true
+    rt::set_parameter linterFlow true
+    rt::set_parameter synthReportEmptyAndUndriven false
     rt::set_parameter dataflowBusHighlighting false
     rt::set_parameter generateDataflowBusNetlist false
     rt::set_parameter dataFlowViewInElab false
     rt::set_parameter busViewFixBrokenConnections false
-    rt::set_parameter elaborateRtlOnlyFlow true
+    rt::set_parameter elaborateRtlOnlyFlow false
     rt::set_parameter writeBlackboxInterface true
     rt::set_parameter merge_flipflops true
-    rt::set_parameter srlDepthThreshold 3
-    rt::set_parameter rstSrlDepthThreshold 4
 # MODE: 
     rt::set_parameter webTalkPath {}
     rt::set_parameter synthDebugLog false
@@ -81,13 +81,15 @@ set rt::rc [catch {
         set oldMIITMVal [rt::get_parameter maxInputIncreaseToMerge]; rt::set_parameter maxInputIncreaseToMerge 1000
         set oldCDPCRL [rt::get_parameter createDfgPartConstrRecurLimit]; rt::set_parameter createDfgPartConstrRecurLimit 1
         $rt::db readXRFFile
-      rt::run_rtlelab -module $rt::top
+      rt::run_synthesis -module $rt::top
         rt::set_parameter maxInputIncreaseToMerge $oldMIITMVal
         rt::set_parameter createDfgPartConstrRecurLimit $oldCDPCRL
     }
 
     set rt::flowresult [ source $::env(SYNTH_COMMON)/flow.tcl ]
     rt::HARTNDb_stopJobStats
+    rt::HARTNDb_reportJobStats "Synthesis Optimization Runtime"
+    rt::HARTNDb_stopSystemStats
     if { $rt::flowresult == 1 } { return -code error }
 
 
