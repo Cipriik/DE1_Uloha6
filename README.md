@@ -42,7 +42,7 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 
 Zde popisujeme soubory projektu:
 
-Top projektu
+## Top projektu
 
 [digi_safe.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd)
 
@@ -62,7 +62,7 @@ Outputy
 * seg - 7 segmentový display
 * an - anody
 
-clk_en
+## clk_en
 
 [clk_en_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd)
 
@@ -74,7 +74,7 @@ Inputy
 Outputy
 * ce - výstup clk_en
 
-safe_control_logic
+## safe_control_logic
 
 [safe_control_logic.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
 
@@ -90,11 +90,20 @@ Outputy
 * led_green - výstup zelené led diody
 * led_red - výstup červené led diody
 
+## debounce
 
+[debounce.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd)
 
+[debounce_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/debounce_tb.vhd)
 
+Inputy
+* clk - systémový clock
+* rst -  Globální reset
+* btn_in - vstup tlačítka
 
-
+Outputy
+* btn_press - Uživatel stiskne tlačítko a btn_press půjde do 1 jen na jeden takt clk a hned se vrátí do 0.
+* btn_state - Zjištění zda je na 1 nebo 0.
 
 
 Zde v tomto projektu jsme udělali tzv. Testbenche s cílem potvrdit správnost implementované logiky, v oblasti generování řídicích signálů a časové synchronizace. Testbench zde vlastně slouží pro simulaci hardwarové části
