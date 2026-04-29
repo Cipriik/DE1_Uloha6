@@ -16,7 +16,6 @@ end digi_safe;
 
 architecture Structural of digi_safe is
 
-
     component debounce is
         port (
             clk       : in  std_logic;
@@ -57,14 +56,8 @@ architecture Structural of digi_safe is
             ce_refresh : in  std_logic;
             data       : in  std_logic_vector(15 downto 0);
             hex_digit  : out std_logic_vector(3 downto 0);
-            anode      : out std_logic_vector(7 downto 0)
-        );
-    end component;
-
-    component bin2seg is
-        port (
-            bin : in  std_logic_vector(3 downto 0);
-            seg : out std_logic_vector(6 downto 0)
+            anode      : out std_logic_vector(7 downto 0);
+            seg        : out std_logic_vector(6 downto 0)
         );
     end component;
 
@@ -76,7 +69,6 @@ architecture Structural of digi_safe is
     constant C_SECRET : std_logic_vector(15 downto 0) := x"1234";
 
 begin
-
 
     debounce_0 : debounce
         port map (
@@ -113,10 +105,9 @@ begin
             ce_refresh => s_ce_refresh,
             data       => s_shift_reg,
             hex_digit  => s_hex_digit,
-            anode      => an
+            anode      => an,
+            seg        => seg
         );
-
-    
 
 end Structural;
 

@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Apr 22 16:34:52 2026
-# Process ID         : 6012
+# Start of session at: Wed Apr 29 16:15:43 2026
+# Process ID         : 9508
 # Current directory  : C:/Users/270925/Desktop/DE1_Uloha6/digi_safe
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13388 C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13172 C:\Users\270925\Desktop\DE1_Uloha6\digi_safe\digi_safe.xpr
 # Log file           : C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/vivado.log
 # Journal file       : C:/Users/270925/Desktop/DE1_Uloha6/digi_safe\vivado.jou
 # Running On         : PC-637
@@ -17,165 +17,21 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 4
 # Host memory        : 8423 MB
-# Swap memory        : 3221 MB
-# Total Virtual      : 11645 MB
-# Available Virtual  : 4878 MB
+# Swap memory        : 3355 MB
+# Total Virtual      : 11779 MB
+# Available Virtual  : 5501 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.xpr
 update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1/digi_safe.bit} [get_hw_devices xc7a50t_0]
-current_hw_device [get_hw_devices xc7a50t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property PROGRAM.FILE {C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1/digi_safe.bit} [get_hw_devices xc7a50t_0]
-program_hw_devices [get_hw_devices xc7a50t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1/digi_safe.bit} [get_hw_devices xc7a50t_0]
-current_hw_device [get_hw_devices xc7a50t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property PROGRAM.FILE {C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1/digi_safe.bit} [get_hw_devices xc7a50t_0]
-program_hw_devices [get_hw_devices xc7a50t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
-close_hw_manager
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/debounce_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/debounce_tb.vhd
-update_compile_order -fileset sim_1
-reset_project
-reset_project
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_debounce [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source cfg_tb_debounce.tcl
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/safe_control_logic_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/safe_control_logic_tb.vhd
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top safe_control_logic_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_safe_control_logic [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source cfg_tb_safe_control_logic.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_digi_safe [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd
-update_compile_order -fileset sim_1
-launch_simulation
-source cfg_tb_digi_safe.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_clk_en [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source cfg_tb_clk_en.tcl
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/bin2seg_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/bin2seg_tb.vhd
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_bin2seg [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-launch_simulation
-launch_simulation
-source cfg_tb_bin2seg.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top cfg_tb_digi_safe [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-reset_project
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -top digi_safe -part xc7a50ticsg324-1L -lint 
 synth_design -top digi_safe -part xc7a50ticsg324-1L -lint 
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-refresh_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+-reset project
 reset_project
