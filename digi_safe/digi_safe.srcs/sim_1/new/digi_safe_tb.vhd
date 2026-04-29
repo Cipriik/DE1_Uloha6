@@ -26,7 +26,7 @@ architecture tb of tb_digi_safe is
     signal seg       : std_logic_vector (6 downto 0);
     signal an        : std_logic_vector (7 downto 0);
 
-    constant TbPeriod : time := 100 ns; -- ***EDIT*** Put right period here
+    constant TbPeriod : time := 10 ns; -- ***EDIT*** Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
@@ -56,12 +56,12 @@ begin
 
         -- Reset generation
         rst <= '1';
-        wait for 100 ns;
+        wait for 20 ns;
         rst <= '0';
-        wait for 100 ns;
+        wait for 20 ns;
 
         -- ***EDIT*** Add stimuli here
-        wait for 100 * TbPeriod;
+        wait for 10 * TbPeriod;
 
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';

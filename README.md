@@ -152,3 +152,6 @@ Zde simulace ověřuje součinnost 16bitového posuvného registru a porovnávac
 V každém taktu probíhá paralelní porovnání obsahu uživatelského registru s referenční hodnotou v secret_reg[15:0]. Průběh signálů potvrzuje, že výstupy led_green a led_red jsou drženy v logické nule až do okamžiku finálního vyhodnocení. Tato konfigurace zaručuje, že nedojde k falešnému povolení přístupu během procesu posouvání bitů v registru. 
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/safe_control_logic_tb.png)
+
+## display_driver_tb
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/49baa7cd2414e74602afaaf3ace1a61a643150d1/dispaly_driver%20sim.png)

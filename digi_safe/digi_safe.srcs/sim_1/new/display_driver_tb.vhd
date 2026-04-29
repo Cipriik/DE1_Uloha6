@@ -57,11 +57,11 @@ begin
         -- Reset generation
         -- ***EDIT*** Check that rst is really your reset signal
         rst <= '1';
-        wait for 100 ns;
+        wait for 10 ns;
         rst <= '0';
-        wait for 100 ns;
+        wait for 10 ns;
 
-        wait for 100 * TbPeriod;
+        wait for 10 * TbPeriod;
 
         TbSimEnded <= '1';
         wait;
