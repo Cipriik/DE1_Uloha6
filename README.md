@@ -108,31 +108,6 @@ Outputy
 
 Zde v tomto projektu jsme udělali tzv. Testbenche s cílem potvrdit správnost implementované logiky, v oblasti generování řídicích signálů a časové synchronizace. Testbench zde vlastně slouží pro simulaci hardwarové části
 
-## clk_en_tb
-
-Testbench generátoru systémového hodinového signálu clk s pevně definovanou periodou TbPeriod, odpovídá cílové pracovní frekvenci aplikace. 
-
-Stabilita simulace je zajištěna úvodní resetovací sekvencí. Během ní je signál rst držen v aktivní logické úrovni, což vynucuje přechod všech vnitřních registrů a stavových automatů do definovaných výchozích stavů. Reset zde eliminuje vznik nedefinovaných přechodových jevů.
-
-Funkce signálu Clock Enable (CE). Testbench potvrzuje, že tento signál pracuje v plné synchronizaci s náběžnou hranou hlavních hodin, což je potřebné  pro FPGA. Testbench ukazuje, že clock enable je zde jako  synchronní dělička frekvence se střídou 50 %. Tzn., že zatímco hlavní hodiny běží kontinuálně, signál CE selektivně povoluje zápis dat nebo změnu vnitřního stavu navazujících modulů v každém druhém taktu. Takto jsme dosáhli přesného řízení datového toku.
-
-Výstupy ze simulátoru generují pulzy s přesnou periodicitou a bez fázového posunu vůči referenčním hodinám.
-
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/clk_en_tb.png)
-
-## debounce_tb
-
-Testování pro pro zamezení tzv. debouncingu bylo zaměřeno na ověření správné detekce stabilního stavu vstupu a generování relevantních výstupních příznaků. 
-Testovací proces začíná ukázkou signálu rst, který po dobu prvních 40 ns drží vnitřní registry v nulovém stavu, což je v simulaci ukázáno přechodem z neznámých hodnot do definované logické nuly. 
-Po uvolnění resetu pracuje modul synchronně s hlavními hodinami clk o periodě 100 ns.
-
-Z naměřených průběhů je patrné, že testbench simuluje přechodový jev na vstupním portu btn_in. Hlavním cílem simulace je prokázat, že výstupy btn_state (indikující aktuální stabilní stav tlačítka) a btn_press (krátký pulz signalizující okamžik stisku) reagují pouze na vstupy, které vykazují dostatečnou stabilitu v čase. 
-
-Na snímku je zachycena fáze po uvolnění resetu, kdy systém čeká na stabilizaci vstupu předtím, než změní stav výstupních signálů. Synchronizace všech změn s náběžnou hranou hodin potvrzuje eliminace mechanických zákmitů kritická pro správnou funkci uživatelského rozhraní. 
-
-Výsledná simulace ukazuje, že modul efektivně filtruje krátké parazitní jevy a poskytuje čistý, časově zarovnaný signál pro další zpracování v FPGA.
-
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/debounce_tb.png)
 
 ## digi_safe_tb
 
@@ -158,5 +133,3 @@ V každém taktu probíhá paralelní porovnání obsahu uživatelského registr
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/safe_control_logic_tb.png)
 
-## display_driver_tb
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/49baa7cd2414e74602afaaf3ace1a61a643150d1/dispaly_driver%20sim.png)
