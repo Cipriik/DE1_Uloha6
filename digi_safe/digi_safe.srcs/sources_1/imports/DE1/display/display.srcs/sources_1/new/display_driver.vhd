@@ -1,74 +1,77 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
 
 entity display_driver is
     Port (
         clk        : in  STD_LOGIC;
         rst        : in  STD_LOGIC;
         ce_refresh : in  STD_LOGIC;
-        data       : in  STD_LOGIC_VECTOR (15 downto 0);
-        -- Výstupy
-        hex_digit  : out STD_LOGIC_VECTOR (3 downto 0);
-        anode      : out STD_LOGIC_VECTOR (7 downto 0);
-        seg        : out std_logic_vector(6 downto 0);
-        dp         : out std_logic
+        data       : in  STD_LOGIC_VECTOR(15 downto 0);
+        seg        : out STD_LOGIC_VECTOR(6 downto 0);
+        anode      : out STD_LOGIC_VECTOR(7 downto 0)
     );
 end display_driver;
 
 architecture Behavioral of display_driver is
 
-    component bin2seg is
-        port (
-            bin : in  std_logic_vector(3 downto 0);
-            seg : out std_logic_vector(6 downto 0)
-        );
-    end component;
-
-    signal s_mux_cnt   : unsigned(1 downto 0) := "00";
-    signal s_hex_digit : std_logic_vector(3 downto 0); -- Tento signál spája proces s dekodérom
+    signal active_digit : integer range 0 to 3 := 0;
+    signal hex_digit    : STD_LOGIC_VECTOR(3 downto 0);
 
 begin
-    p_mux_cnt : process(clk)
+
+    process(clk)
     begin
         if rising_edge(clk) then
             if rst = '1' then
-                s_mux_cnt <= "00";
-            elsif ce_refresh = '1' then
-                s_mux_cnt <= s_mux_cnt + 1;
+                active_digit <= 0;
+            else
+                if ce_refresh = '1' then
+                    if active_digit = 3 then
+                        active_digit <= 0;
+                    else
+                        active_digit <= active_digit + 1;
+                    end if;
+                end if;
             end if;
         end if;
     end process;
 
-    -- Multiplexer a dekodér anod
-    p_mux_select : process(s_mux_cnt, data)
+    process(active_digit, data)
     begin
-        anode <= (others => '1'); 
-        case s_mux_cnt is
-            when "00" =>
-                s_hex_digit <= data(3 downto 0);
-                anode(0)    <= '0';
-            when "01" =>
-                s_hex_digit <= data(7 downto 4);
-                anode(1)    <= '0';
-            when "10" =>
-                s_hex_digit <= data(11 downto 8);
-                anode(2)    <= '0';
-            when "11" =>
-                s_hex_digit <= data(15 downto 12);
-                anode(3)    <= '0';
+        case active_digit is
+            when 0 =>
+                hex_digit <= data(15 downto 12);
+                anode <= "11110111";
+            when 1 =>
+                hex_digit <= data(11 downto 8);
+                anode <= "11111011";
+            when 2 =>
+                hex_digit <= data(7 downto 4);
+                anode <= "11111101";
+            when 3 =>
+                hex_digit <= data(3 downto 0);
+                anode <= "11111110";
             when others =>
-                s_hex_digit <= x"0";
+                hex_digit <= "0000";
+                anode <= "11111111";
         end case;
     end process;
 
-    hex_digit <= s_hex_digit;
+    process(hex_digit)
+begin
+    case hex_digit is
+        when "0000" => seg <= "0000001"; -- 0
+        when "0001" => seg <= "1001111"; -- 1
+        when "0010" => seg <= "0010010"; -- 2
+        when "0011" => seg <= "0000110"; -- 3
+        when "0100" => seg <= "1001100"; -- 4
+        when "0101" => seg <= "0100100"; -- 5
+        when "0110" => seg <= "0100000"; -- 6
+        when "0111" => seg <= "0001111"; -- 7
+        when "1000" => seg <= "0000000"; -- 8
+        when "1001" => seg <= "0000100"; -- 9
+        when others => seg <= "1111111"; -- vypnuté
+    end case;
+end process;
 
-    bin2seg_0 : bin2seg
-        port map (
-            bin => s_hex_digit,
-            seg => seg
-        );
-
-    dp <= '1';
 end Behavioral;
