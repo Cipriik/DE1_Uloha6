@@ -125,7 +125,7 @@ Nadstavenie druhej cifry - Stlačenie tlačidla btnu (button up) zmení druhú h
 
 Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazujú že prebieha proces dynamického prepínania číslic
 
-## safe_control_tb
+## safe_control_tb  //prerobiť ešte
 
 Zde simulace ověřuje součinnost 16bitového posuvného registru a porovnávací logiky. Po odeznění počátečního resetu, který bezpečně nuluje veškeré vnitřní stavy, je systém připraven k postupnému načítání dat. Vstupní 4bitová hodnota ze sběrnice sw[3:0] je připravena k sériovému posunu do registru shift_reg[15:0].
 
