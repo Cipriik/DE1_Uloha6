@@ -38,7 +38,7 @@ Shiftujeme (přesouváme) čísla pomocí tlačítka Btnc. Pokud nemáme správn
 
 ![image alt](https://github.com/Cipriik/DE1_Uloha6/blob/main/schema.png)
 
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/5490507d7b7b76a180884ed56d5da648442aab78/Sch%C3%A9ma.png)
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/df86a58035c3521a5049305c993d1fe48ce598b0/final%20schema.png)
 
 Zde popisujeme soubory projektu:
 
