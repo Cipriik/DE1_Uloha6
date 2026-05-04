@@ -139,10 +139,15 @@ Výsledná simulace ukazuje, že modul efektivně filtruje krátké parazitní j
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/9bc76df5b71bd33921422fe5e3c2dab055cb0577/Simul%C3%A1cia%20digi_safe.png)
 
 Simulácia obsahuje interakcie medzi ovládacími prvkami a logikou digitálneho trezoru.
+
 Reset - Signál rst inicializuje systém, následne kód s_code sa nastaví na 0000 a ukazovateľ pozície s_pos na prvé číslo.
+
 Nadstavenie prvej cifry - Stlačenie tlačidla btnu (button up) zmení prvú hodnotu o jednu hodnotu nahor
+
 Posunutie kurzora - btnr (button right) mení s_pos z 1 na 2 pozíciu čím vieme editovať ďalšiu hodnotu
+
 Nadstavenie druhej cifry - Stlačenie tlačidla btnu (button up) zmení druhú hodnotu o jednu hodnotu nahor
+
 Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazujú že prebieha proces dynamického prepínania číslic
 
 ## safe_control_tb
