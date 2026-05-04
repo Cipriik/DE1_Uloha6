@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon May  4 22:20:29 2026
+# Process ID         : 26540
+# Current directory  : C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23880 C:\Users\admin\Desktop\Projekt\DE1_Uloha6\digi_safe\digi_safe.xpr
+# Log file           : C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/vivado.log
+# Journal file       : C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe\vivado.jou
+# Running On         : DESKTOP-38S5LQR
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+# CPU Frequency      : 2904 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17103 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28914 MB
+# Available Virtual  : 12583 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/safe_control_logic_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/safe_control_logic_tb.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/display_driver_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/display_driver_tb.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/bin2seg_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/digi_safe.srcs/sim_1/new/bin2seg_tb.vhd
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_digi_safe [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source tb_digi_safe.tcl
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb_digi_safe/dut/digit_editor_0/s_code}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_digi_safe/dut/digit_editor_0/s_pos}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_digi_safe/dut/safe_control_logic_0/secret_code}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb_digi_safe/dut/led_green}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_digi_safe/dut/led_red}} 
+relaunch_sim
+run 10 us
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/admin/Desktop/Projekt/DE1_Uloha6/digi_safe/tb_digi_safe_behav.wcfg}
+close_sim

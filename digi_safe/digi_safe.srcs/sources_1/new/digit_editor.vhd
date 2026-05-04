@@ -51,7 +51,7 @@ begin
             else
                 blink_counter <= blink_counter + 1;
 
-                if blink_counter = 50_000_000 then
+                if blink_counter = 100 then
                     blink_counter <= (others => '0');
                     blink_state <= not blink_state;
                 end if;

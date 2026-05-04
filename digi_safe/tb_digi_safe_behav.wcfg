@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_digi_safe_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_digi_safe" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_digi_safe/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/btnu" type="logic">
+      <obj_property name="ElementShortName">btnu</obj_property>
+      <obj_property name="ObjectShortName">btnu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/btnd" type="logic">
+      <obj_property name="ElementShortName">btnd</obj_property>
+      <obj_property name="ObjectShortName">btnd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/btnl" type="logic">
+      <obj_property name="ElementShortName">btnl</obj_property>
+      <obj_property name="ObjectShortName">btnl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/btnr" type="logic">
+      <obj_property name="ElementShortName">btnr</obj_property>
+      <obj_property name="ObjectShortName">btnr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/btnc" type="logic">
+      <obj_property name="ElementShortName">btnc</obj_property>
+      <obj_property name="ObjectShortName">btnc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/seg" type="array">
+      <obj_property name="ElementShortName">seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/an" type="array">
+      <obj_property name="ElementShortName">an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">an[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/TbSimEnded" type="logic">
+      <obj_property name="ElementShortName">TbSimEnded</obj_property>
+      <obj_property name="ObjectShortName">TbSimEnded</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/TbPeriod" type="other">
+      <obj_property name="ElementShortName">TbPeriod</obj_property>
+      <obj_property name="ObjectShortName">TbPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/dut/digit_editor_0/s_code" type="array">
+      <obj_property name="ElementShortName">s_code[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_code[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/dut/digit_editor_0/s_pos" type="other">
+      <obj_property name="ElementShortName">s_pos</obj_property>
+      <obj_property name="ObjectShortName">s_pos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/dut/led_green" type="logic">
+      <obj_property name="ElementShortName">led_green</obj_property>
+      <obj_property name="ObjectShortName">led_green</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digi_safe/dut/led_red" type="logic">
+      <obj_property name="ElementShortName">led_red</obj_property>
+      <obj_property name="ObjectShortName">led_red</obj_property>
+   </wvobject>
+</wave_config>

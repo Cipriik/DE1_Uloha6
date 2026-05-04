@@ -168,7 +168,7 @@ begin
 
     clk_en_0 : clk_en
         generic map (
-            G_MAX => 100_000
+            G_MAX => 2
         )
         port map (
             clk => clk,
