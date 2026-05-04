@@ -136,14 +136,14 @@ Výsledná simulace ukazuje, že modul efektivně filtruje krátké parazitní j
 
 ## digi_safe_tb
 
-Simulace zde zachycuje počáteční fázi provozu modulu digitálního trezoru, přičemž se zaměřuje na proces inicializace a stabilitu systému v klidovém stavu.
-Celková délka zobrazené simulace je 1000ns, s periodou clocku nastavenou na 100ns.
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/9bc76df5b71bd33921422fe5e3c2dab055cb0577/Simul%C3%A1cia%20digi_safe.png)
 
-Ukázka začíná aktivací resetovacího signálu rst, který je držen v logické jedničce po dobu prvního hodinového cyklu. Během této fáze dochází k odstranění nedefinovaných stavů na výstupních signálech led_green a led_red, které se následně ustálí na logické nule. Vstupy systému, jsou řešeny přepínači sw[3:0] a potvrzovacím tlačítkem btn_in (na desce nexys btnc), jsou v této fázi simulace udržovány na nulových hodnotách. 
-
-To umožňuje ověřit chování systému v tzv. "IDLE" stavu. Výstupy určené pro sedmisegmentovku, konkrétně sběrnice seg[6:0] s hodnotou 01 a anoda an[7:0] s hexadecimální hodnotou FE, indikují aktivitu zobrazení. Hodnota FE (binárně 11111110) značí, že je aktivní pouze první pozice displeje. Z časového průběhu vyplývá, že celý systém pracuje v plné synchronizaci s náběžnou hranou clocku.
-
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/digi_safe_tb.png)
+Simulácia obsahuje interakcie medzi ovládacími prvkami a logikou digitálneho trezoru.
+Reset - Signál rst inicializuje systém, následne kód s_code sa nastaví na 0000 a ukazovateľ pozície s_pos na prvé číslo.
+Nadstavenie prvej cifry - Stlačenie tlačidla btnu (button up) zmení prvú hodnotu o jednu hodnotu nahor
+Posunutie kurzora - btnr (button right) mení s_pos z 1 na 2 pozíciu čím vieme editovať ďalšiu hodnotu
+Nadstavenie druhej cifry - Stlačenie tlačidla btnu (button up) zmení druhú hodnotu o jednu hodnotu nahor
+Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazujú že prebieha proces dynamického prepínania číslic
 
 ## safe_control_tb
 
