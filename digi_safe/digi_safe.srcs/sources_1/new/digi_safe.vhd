@@ -13,8 +13,8 @@ entity digi_safe is
         btnr      : in  STD_LOGIC;
         btnc      : in  STD_LOGIC;
 
-        led_green : out STD_LOGIC;
-        led_red   : out STD_LOGIC;
+        ledm16    : out STD_LOGIC;
+        ledn16    : out STD_LOGIC;
 
         seg       : out STD_LOGIC_VECTOR (6 downto 0);
         an        : out STD_LOGIC_VECTOR (7 downto 0)
@@ -55,8 +55,8 @@ architecture Structural of digi_safe is
             btn_press    : in  std_logic;
             entered_code : in  std_logic_vector(15 downto 0);
             secret_code  : in  std_logic_vector(15 downto 0);
-            led_green    : out std_logic;
-            led_red      : out std_logic
+            ledm16       : out std_logic;
+            ledn16       : out std_logic
         );
     end component;
 
@@ -162,8 +162,8 @@ begin
             btn_press    => s_btn_press,
             entered_code => s_code,
             secret_code  => C_SECRET,
-            led_green    => led_green,
-            led_red      => led_red
+            ledm16       => ledm16,
+            ledn16       => ledn16
         );
 
     clk_en_0 : clk_en

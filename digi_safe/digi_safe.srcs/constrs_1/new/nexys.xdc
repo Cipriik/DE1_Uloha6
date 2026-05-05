@@ -35,8 +35,8 @@ set_property -dict { PACKAGE_PIN M18 IOSTANDARD LVCMOS33 } [get_ports {btnu}];
 # -----------------------------------------------
 # LEDs
 # -----------------------------------------------
-set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports {led_green}];
-set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports {led_red}];
+set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports {ledm16}];
+set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports {ledn16}];
 
 # -----------------------------------------------
 # Seven-segment cathodes CA..CG

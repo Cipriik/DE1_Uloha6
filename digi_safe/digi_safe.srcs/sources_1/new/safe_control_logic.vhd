@@ -8,8 +8,8 @@ entity safe_control_logic is
         btn_press    : in  STD_LOGIC;
         entered_code : in  STD_LOGIC_VECTOR (15 downto 0);
         secret_code  : in  STD_LOGIC_VECTOR (15 downto 0);
-        led_green    : out STD_LOGIC;
-        led_red      : out STD_LOGIC
+        ledm16       : out STD_LOGIC;
+        ledn16       : out STD_LOGIC
     );
 end safe_control_logic;
 
@@ -19,16 +19,16 @@ begin
     begin
         if rising_edge(clk) then
             if rst = '1' then
-                led_green <= '0';
-                led_red   <= '0';
+                ledm16 <= '0';
+                ledn16   <= '0';
             else
                 if btn_press = '1' then
                     if entered_code = secret_code then
-                        led_green <= '1';
-                        led_red   <= '0';
+                        ledm16 <= '1';
+                        ledn16   <= '0';
                     else
-                        led_green <= '0';
-                        led_red   <= '1';
+                        ledm16 <= '0';
+                        ledn16   <= '1';
                     end if;
                 end if;
             end if;

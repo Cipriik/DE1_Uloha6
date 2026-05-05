@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue May  5 22:21:44 2026
-# Process ID         : 14832
+# Start of session at: Tue May  5 21:50:53 2026
+# Process ID         : 9940
 # Current directory  : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23844 C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent33844 C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.xpr
 # Log file           : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/vivado.log
 # Journal file       : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe\vivado.jou
 # Running On         : DESKTOP-LLU21BE
@@ -19,7 +19,7 @@
 # Host memory        : 16989 MB
 # Swap memory        : 8321 MB
 # Total Virtual      : 25311 MB
-# Available Virtual  : 11123 MB
+# Available Virtual  : 9330 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.xpr
@@ -93,6 +93,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.gen/sources_1'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
@@ -120,8 +121,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -132,214 +131,7 @@ WARNING: [Project 1-5713] Board part '' set for the project  is not found. Board
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1652.492 ; gain = 186.102
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\digi_safe.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\digi_safe.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.srcs\sources_1\new\safe_control_logic.vhd:]
-synth_design -top digi_safe -part xc7a50ticsg324-1L -lint 
-Command: synth_design -top digi_safe -part xc7a50ticsg324-1L -lint
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 36328
----------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2180.270 ; gain = 505.027
----------------------------------------------------------------------------------
-Clean up Linter database...
-INFO: [Synth 8-638] synthesizing module 'digi_safe' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:24]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnu_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'clk_en' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:4' bound to instance 'clock_0' of component 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_en' (1#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:12]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnd_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:113]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnl_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:121]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnr_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:129]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnc_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:137]
-INFO: [Synth 8-3491] module 'digit_editor' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:5' bound to instance 'digit_editor_0' of component 'digit_editor' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'digit_editor' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'digit_editor' (3#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:21]
-INFO: [Synth 8-3491] module 'safe_control_logic' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:4' bound to instance 'safe_control_logic_0' of component 'safe_control_logic' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'safe_control_logic' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'safe_control_logic' (4#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:16]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'clk_en' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:4' bound to instance 'clk_en_0' of component 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'clk_en__parameterized1' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_en__parameterized1' (4#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-INFO: [Synth 8-3491] module 'display_driver' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:4' bound to instance 'display_driver_0' of component 'display_driver' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:179]
-INFO: [Synth 8-638] synthesizing module 'display_driver' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:15]
-INFO: [Synth 8-226] default block is never used [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'display_driver' (5#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:15]
-INFO: [Synth 8-226] default block is never used [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:194]
-INFO: [Synth 8-256] done synthesizing module 'digi_safe' (6#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:24]
----------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2299.172 ; gain = 623.930
----------------------------------------------------------------------------------
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Tue May  5 22:28:07 2026
-| Host         : DESKTOP-LLU21BE running 64-bit major release  (build 9200)
----------------------------------------------------------------------------------------------------------------------------------------------
-
-RTL Linter Report
-
-Table of Contents
------------------
-1. Summary
-
-1. Summary
-----------
-
-+----------+----------+--------------+----------+
-| Rule ID  | Severity | # Violations | # Waived |
-+----------+----------+--------------+----------+
-| ASSIGN-5 | WARNING  | 1            | 0        |
-+----------+----------+--------------+----------+
-
-
-WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 's_rst_clean' declared and are not set.
-RTL Name 's_rst_clean', Hierarchy 'digi_safe', File 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd', Line 94.
-INFO: [Synth 37-85] Total of 1 linter message(s) generated.
-INFO: [Synth 37-45] Linter Run Finished!
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2299.172 ; gain = 623.930
-INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2299.172 ; gain = 623.930
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a50ticsg324-1L
-Top: digi_safe
-INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2383.227 ; gain = 71.148
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'digi_safe' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:24]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnu_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'clk_en' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:4' bound to instance 'clock_0' of component 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_en' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:12]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnd_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:113]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnl_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:121]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnr_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:129]
-WARNING: [Synth 8-5640] Port 'btn_state' is missing in component declaration [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd:4' bound to instance 'debounce_btnc_0' of component 'debounce' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:137]
-INFO: [Synth 8-3491] module 'digit_editor' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:5' bound to instance 'digit_editor_0' of component 'digit_editor' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'digit_editor' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'digit_editor' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd:21]
-INFO: [Synth 8-3491] module 'safe_control_logic' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:4' bound to instance 'safe_control_logic_0' of component 'safe_control_logic' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'safe_control_logic' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'safe_control_logic' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd:16]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'clk_en' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:4' bound to instance 'clk_en_0' of component 'clk_en' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'clk_en__parameterized1' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-	Parameter G_MAX bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_en__parameterized1' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd:12]
-INFO: [Synth 8-3491] module 'display_driver' declared at 'C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:4' bound to instance 'display_driver_0' of component 'display_driver' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:179]
-INFO: [Synth 8-638] synthesizing module 'display_driver' [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:15]
-INFO: [Synth 8-226] default block is never used [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'display_driver' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/imports/DE1/display/display.srcs/sources_1/new/display_driver.vhd:15]
-INFO: [Synth 8-226] default block is never used [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:194]
-INFO: [Synth 8-256] done synthesizing module 'digi_safe' (0#1) [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/sources_1/new/digi_safe.vhd:24]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2500.512 ; gain = 188.434
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2500.512 ; gain = 188.434
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2500.512 ; gain = 188.434
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2500.512 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
-WARNING: [Vivado 12-584] No ports matched 'btn_in'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led_red'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2615.652 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2825.910 ; gain = 513.832
-30 Infos, 11 Warnings, 6 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 2825.910 ; gain = 526.738
-refresh_design
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
-WARNING: [Vivado 12-584] No ports matched 'btn_in'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
-Completed Processing XDC Constraints
-
-reset_project
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1656.844 ; gain = 190.965
 reset_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May  5 22:33:40 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 21:54:00 2026...
