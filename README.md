@@ -98,6 +98,21 @@ ku koncu príde signál rst => resetuje sa kód a zadávame druhý, v našom pr�
 
 zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti červená LED (ledn16)
 
+## digit_editor
+
+Inputy
+* clk - systémový clock
+* rst - globálny reset
+* btnu -  tlačítko, které slouží pro zvyšovanie hodnôt na displeji
+* btnd -  tlačítko, které slouží pro zmenšovanie hodnôt na displeji
+* btnl -  tlačítko, které slouží pro posúvanie upravvaného čísla o 1 pozíciu doľava
+* btnr - tlačítko, které slouží pro posúvanie upravovaného čísla o 1 pozíciu doprava
+
+Outputy
+* code_out (15 downto 0) - výsledný 16 bitový kód
+* selected (range 0 to 3) -index vybranej číslice
+* blink_on - signál blikania, mení svoj stav medzi 0 a 1 na práve vybratej číslici
+
 ## clk_en
 
 [clk_en](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd)
