@@ -114,11 +114,22 @@ Nadstavenie druhej cifry - Stlačenie tlačidla btnu (button up) zmení druhú h
 
 Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazujú že prebieha proces dynamického prepínania číslic
 
-## safe_control_tb  //prerobiť ešte
+## safe_control_tb
 
-Zde simulace ověřuje součinnost 16bitového posuvného registru a porovnávací logiky. Po odeznění počátečního resetu, který bezpečně nuluje veškeré vnitřní stavy, je systém připraven k postupnému načítání dat. Vstupní 4bitová hodnota ze sběrnice sw[3:0] je připravena k sériovému posunu do registru shift_reg[15:0].
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/6ffa87974b3be3068188db19688ab7df12ccdcc1/safe_control_logic_tb.png)
 
-V každém taktu probíhá paralelní porovnání obsahu uživatelského registru s referenční hodnotou v secret_reg[15:0]. Průběh signálů potvrzuje, že výstupy led_green a led_red jsou drženy v logické nule až do okamžiku finálního vyhodnocení. Tato konfigurace zaručuje, že nedojde k falešnému povolení přístupu během procesu posouvání bitů v registru. 
+Začiatok simulácie: clk beží pravidelne
 
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/c427b204c03fd7ea259b0f3681181e79477f5cc0/safe_control_logic_tb.png)
+                    rst = 0 systém nie je resetovaný
 
+                    entered_code bliká ako 0000 - nesvieti žiadna led, následne príde signál btn_press (stláčanie tlačidiel a menenie kódu)
+
+                    zadaný kód sa následne mení na 1234, to je náš secret_code => svieti zelená LED (ledm16)
+
+                    ku koncu príde signál rst => resetuje sa kód a zadávame druhý, v našom prípade 9999 a stláčame btn_press
+
+                    zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti červená LED (ledn16)
+
+                    
+
+                    
