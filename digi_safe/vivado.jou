@@ -25,3 +25,7 @@ start_gui
 open_project C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.xpr
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 reset_project
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_project

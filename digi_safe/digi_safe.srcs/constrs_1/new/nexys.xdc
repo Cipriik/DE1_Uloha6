@@ -10,12 +10,6 @@ create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {cl
 set_property -dict { PACKAGE_PIN V10 IOSTANDARD LVCMOS33 } [get_ports {sw15}];
 
 # -----------------------------------------------
-# Unused btn_in - SW14
-# ak btn_in vyhodíš z VHDL entity, vyhoď aj tento riadok
-# -----------------------------------------------
-set_property -dict { PACKAGE_PIN U11 IOSTANDARD LVCMOS33 } [get_ports {btn_in}];
-
-# -----------------------------------------------
 # Push buttons
 # -----------------------------------------------
 set_property -dict { PACKAGE_PIN M17 IOSTANDARD LVCMOS33 } [get_ports {btnr}];
