@@ -60,16 +60,14 @@ Outputy
 Inputy
 * clk - systémový clock
 * rst -  Globální reset
-* sw - switch
+* btn_press
 * secret_code - tajný kód námi nastavený
+* entered_code - zadaný kód ktorý sa porovnáva so secret_code
 Outputy
-* shift_reg - shiftování registru
-* led_green - výstup zelené led diody
-* led_red - výstup červené led diody
+* ledm16 - výstup zelené led diody
+* ledn16 - výstup červené led diody
 
 ## clk_en
-
-[clk_en_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd)
 
 [clk_en](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd)
 
