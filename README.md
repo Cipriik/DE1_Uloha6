@@ -118,17 +118,18 @@ Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazu
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/6ffa87974b3be3068188db19688ab7df12ccdcc1/safe_control_logic_tb.png)
 
-Začiatok simulácie: clk beží pravidelne
+Začiatok simulácie: 
+clk beží pravidelne
 
-                    rst = 0 systém nie je resetovaný
+rst = 0 systém nie je resetovaný
 
-                    entered_code bliká ako 0000 - nesvieti žiadna led, následne príde signál btn_press (stláčanie tlačidiel a menenie kódu)
+entered_code bliká ako 0000 - nesvieti žiadna led, následne príde signál btn_press (stláčanie tlačidiel a menenie kódu)
 
-                    zadaný kód sa následne mení na 1234, to je náš secret_code => svieti zelená LED (ledm16)
+zadaný kód sa následne mení na 1234, to je náš secret_code => svieti zelená LED (ledm16)
 
-                    ku koncu príde signál rst => resetuje sa kód a zadávame druhý, v našom prípade 9999 a stláčame btn_press
+ku koncu príde signál rst => resetuje sa kód a zadávame druhý, v našom prípade 9999 a stláčame btn_press
 
-                    zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti červená LED (ledn16)
+zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti červená LED (ledn16)
 
                     
 
