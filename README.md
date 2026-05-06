@@ -2,9 +2,6 @@
 Digital Safe / Combination Lock
 Implement a 4-digit code entry system with visual feedback. Store entered codes in registers and compare to the preset combination to indicate success or failure.
 
-1. hodina - Začali sme robiť základnú blokovú schému, spravili základný digi_safe.vhd a zakomponovali do neho debounce. Do projektu sme pridali aj súbory display_driver, bin_2_seg a counter.
-
-2. Zde diagram, obsahuje základní debounce plus dvě komponenty, které později připojím
 
 V tomhle projektu řešíme digitální zámek. V kódu jsme zakomponovali heslo pro pro rozsvícení led kontrolky určitou barvou, uživatel zadává čísla pomocí tzv. buttons. Heslo může být zadáno 10 tisíci kombinacemi. Uživatel pracuje s buttons pomocí  principu posuvného registru (Shift Register). 
 
