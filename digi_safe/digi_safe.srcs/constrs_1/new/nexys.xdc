@@ -7,21 +7,13 @@ create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {cl
 # -----------------------------------------------
 # Reset - SW15
 # -----------------------------------------------
-set_property -dict { PACKAGE_PIN V10 IOSTANDARD LVCMOS33 } [get_ports {rst}];
+set_property -dict { PACKAGE_PIN V10 IOSTANDARD LVCMOS33 } [get_ports {sw15}];
 
 # -----------------------------------------------
 # Unused btn_in - SW14
 # ak btn_in vyhodíš z VHDL entity, vyhoď aj tento riadok
 # -----------------------------------------------
 set_property -dict { PACKAGE_PIN U11 IOSTANDARD LVCMOS33 } [get_ports {btn_in}];
-
-# -----------------------------------------------
-# Switches sw[3:0]
-# -----------------------------------------------
-set_property -dict { PACKAGE_PIN J15 IOSTANDARD LVCMOS33 } [get_ports {sw[0]}];
-set_property -dict { PACKAGE_PIN L16 IOSTANDARD LVCMOS33 } [get_ports {sw[1]}];
-set_property -dict { PACKAGE_PIN M13 IOSTANDARD LVCMOS33 } [get_ports {sw[2]}];
-set_property -dict { PACKAGE_PIN R15 IOSTANDARD LVCMOS33 } [get_ports {sw[3]}];
 
 # -----------------------------------------------
 # Push buttons
@@ -35,8 +27,8 @@ set_property -dict { PACKAGE_PIN M18 IOSTANDARD LVCMOS33 } [get_ports {btnu}];
 # -----------------------------------------------
 # LEDs
 # -----------------------------------------------
-set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports {ledm16}];
-set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports {ledn16}];
+set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports {ld16}];
+set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports {ld17}];
 
 # -----------------------------------------------
 # Seven-segment cathodes CA..CG
