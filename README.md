@@ -131,6 +131,11 @@ ku koncu príde signál rst => resetuje sa kód a zadávame druhý, v našom pr�
 
 zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti červená LED (ledn16)
 
-                    
 
+## Rozdelenie úloh v tíme
+Cipro - vytvorenie prvotného kódu, robenie testbenchov, .xdc súbor
+
+Atanasov - readme, spravenie plagátu, úprava kódov pre lepšiu funkčnosť
+
+Borot - implementácia návrhov na zlepšenie od profesora do kódu, vytvorenie kódu na ovládanie cez btns a instantnej odozvy displeja
                     
