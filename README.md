@@ -65,6 +65,7 @@ Inputy
 * btn_press
 * secret_code - tajný kód námi nastavený
 * entered_code - zadaný kód ktorý sa porovnáva so secret_code
+
 Outputy
 * ledm16 - výstup zelené led diody
 * ledn16 - výstup červené led diody
