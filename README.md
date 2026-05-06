@@ -25,7 +25,7 @@ Aktuálny projekt funguje tak že nám zasvieti displej a začne blikať číslo
 | **seg** | out | `std_logic_vector(6 downto 0)` | 7-segment display cathodes (active-low) |
 | **an** | out | `std_logic_vector(7 downto 0)` | 7-segment display anodes (digit selection, active-low) |
 
-##Bloková schéma
+## Bloková schéma
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/cfa4f29539304cef6e23f11bd03cdba220a41803/linter.png)
 
