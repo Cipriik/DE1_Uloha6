@@ -146,7 +146,15 @@ Outputy
 * btn_press - Uživatel stiskne tlačítko a btn_press půjde do 1 jen na jeden takt clk a hned se vrátí do 0.
 * btn_state - Zjištění zda je na 1 nebo 0.
 
+## Resources
 
+Post synthesis
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/317c162419c80521d8f6d57b0fdd5c313845b66c/post-synthesis_resources.png)
+
+Post implementation
+
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/317c162419c80521d8f6d57b0fdd5c313845b66c/post-implementation_resources.png)
 
 ## Rozdelenie úloh v tíme
 Cipro - vytvorenie prvotného kódu, robenie testbenchov, .xdc súbor, schéma
