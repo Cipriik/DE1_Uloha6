@@ -143,9 +143,9 @@ Outputy
 
 
 ## Rozdelenie úloh v tíme
-Cipro - vytvorenie prvotného kódu, robenie testbenchov, .xdc súbor
+Cipro - vytvorenie prvotného kódu, robenie testbenchov, .xdc súbor, schéma
 
-Atanasov - readme, spravenie plagátu, úprava kódov pre lepšiu funkčnosť
+Atanasov - readme, spravenie plagátu, úprava kódov pre lepšiu funkčnosť, schéma
 
 Borot - implementácia návrhov na zlepšenie od profesora do kódu, vytvorenie kódu na ovládanie cez btns a instantnej odozvy displeja
                     
