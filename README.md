@@ -24,7 +24,8 @@ Aktuálny projekt funguje tak že nám zasvieti displej a začne blikať číslo
 
 ## Video 
 
-Vo videu demonštrujeme fungovanie projektu a popisujeme ako funguje
+Vo videu demonštrujeme fungovanie projektu a popisujeme ako funguje.
+
 [Video](https://www.youtube.com/shorts/0L7l6XuYVXE)
 
 ## Bloková schéma
