@@ -41,13 +41,15 @@ Testbench projektu
 
 Inputy:
 * clk - 100 MHz systémový clock z desky Nexys A7-50T
-* rst -  Globální reset tlačítko (na desce také btnu) 
-* btnc -  tlačítko, které slouží pro shiftování přes sloty
-* sw - nastavování čísel pro heslo (binárně)
+* rst -  Globální reset tlačítko (na desce také sw) 
+* btnu -  tlačítko, které slouží pro zvyšovanie hodnôt na displeji
+* btnd -  tlačítko, které slouží pro zmenšovanie hodnôt na displeji
+* btnl -  tlačítko, které slouží pro posúvanie upravvaného čísla o 1 pozíciu doľava
+* btnr - tlačítko, které slouží pro posúvanie upravovaného čísla o 1 pozíciu doprava
 
 Outputy
-* led_green - led dioda která se rozsvítí při správném zadání hesla
-* led_red - led dioda která se rozsvítí při špatném zadání hesla
+* ledm16 - led dioda která se rozsvítí při správném zadání hesla
+* ledn16 - led dioda která se rozsvítí při špatném zadání hesla
 * seg - 7 segmentový display
 * an - anody
 
