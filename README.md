@@ -55,7 +55,7 @@ Outputy
 
 [safe_control_logic.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
 
-[safe_control_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
+[safe_control_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/2051a70c417804a45e1742274a433fd7e66df454/digi_safe/digi_safe.srcs/sim_1/new/tb_safe_control_logic.vhd)
 
 Inputy
 * clk - systémový clock
