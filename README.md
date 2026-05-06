@@ -27,7 +27,7 @@ Aktuálny projekt funguje tak že nám zasvieti displej a začne blikať číslo
 
 ##Bloková schéma
 
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/df86a58035c3521a5049305c993d1fe48ce598b0/final%20schema.png)
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/cfa4f29539304cef6e23f11bd03cdba220a41803/linter.png)
 
 Zde popisujeme soubory projektu:
 
