@@ -112,7 +112,7 @@ Nadstavenie druhej cifry - Stlačenie tlačidla btnu (button up) zmení druhú h
 
 Multiplexovanie displeja - Zmeny v signáloch an (anóda) a seg (segmenty) ukazujú že prebieha proces dynamického prepínania číslic
 
-## safe_control_tb
+## safe_control_logic_tb
 
 ![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/6ffa87974b3be3068188db19688ab7df12ccdcc1/safe_control_logic_tb.png)
 
