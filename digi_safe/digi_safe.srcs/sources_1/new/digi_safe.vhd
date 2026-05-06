@@ -5,7 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity digi_safe is
     Port (
         clk       : in  STD_LOGIC;
-        rst       : in  STD_LOGIC;
+        sw15       : in  STD_LOGIC;
 
         btnu      : in  STD_LOGIC;
         btnd      : in  STD_LOGIC;
@@ -13,8 +13,8 @@ entity digi_safe is
         btnr      : in  STD_LOGIC;
         btnc      : in  STD_LOGIC;
 
-        ledm16    : out STD_LOGIC;
-        ledn16    : out STD_LOGIC;
+        ld16    : out STD_LOGIC;
+        ld17    : out STD_LOGIC;
 
         seg       : out STD_LOGIC_VECTOR (6 downto 0);
         an        : out STD_LOGIC_VECTOR (7 downto 0)
@@ -55,14 +55,14 @@ architecture Structural of digi_safe is
             btn_press    : in  std_logic;
             entered_code : in  std_logic_vector(15 downto 0);
             secret_code  : in  std_logic_vector(15 downto 0);
-            ledm16       : out std_logic;
-            ledn16       : out std_logic
+            ld16         : out std_logic;
+            ld17         : out std_logic
         );
     end component;
 
     component clk_en is
         generic (
-            G_MAX : integer := 2
+            G_MAX : integer := 200_000
         );
         port (
             clk : in  std_logic;
@@ -105,7 +105,7 @@ begin
     debounce_btnu_0 : debounce
         port map (
             clk       => clk,
-            rst       => rst,
+            rst       => sw15,
             btn_in    => btnu,
             btn_press => s_btnu_press
         );
@@ -113,7 +113,7 @@ begin
     debounce_btnd_0 : debounce
         port map (
             clk       => clk,
-            rst       => rst,
+            rst       => sw15,
             btn_in    => btnd,
             btn_press => s_btnd_press
         );
@@ -121,7 +121,7 @@ begin
     debounce_btnl_0 : debounce
         port map (
             clk       => clk,
-            rst       => rst,
+            rst       => sw15,
             btn_in    => btnl,
             btn_press => s_btnl_press
         );
@@ -129,7 +129,7 @@ begin
     debounce_btnr_0 : debounce
         port map (
             clk       => clk,
-            rst       => rst,
+            rst       => sw15,
             btn_in    => btnr,
             btn_press => s_btnr_press
         );
@@ -137,7 +137,7 @@ begin
     debounce_btnc_0 : debounce
         port map (
             clk       => clk,
-            rst       => rst,
+            rst       => sw15,
             btn_in    => btnc,
             btn_press => s_btn_press
         );
@@ -145,7 +145,7 @@ begin
     digit_editor_0 : digit_editor
         port map (
             clk      => clk,
-            rst      => rst,
+            rst      => sw15,
             btnu => s_btnu_press,
             btnd => s_btnd_press,
             btnl => s_btnl_press,
@@ -158,28 +158,28 @@ begin
     safe_control_logic_0 : safe_control_logic
         port map (
             clk          => clk,
-            rst          => rst,
+            rst          => sw15,
             btn_press    => s_btn_press,
             entered_code => s_code,
             secret_code  => C_SECRET,
-            ledm16       => ledm16,
-            ledn16       => ledn16
+            ld16         => ld16,
+            ld17         => ld17
         );
 
     clk_en_0 : clk_en
         generic map (
-            G_MAX => 2
+            G_MAX => 100_000
         )
         port map (
             clk => clk,
-            rst => rst,
+            rst => sw15,
             ce  => s_ce_refresh
         );
 
     display_driver_0 : display_driver
         port map (
             clk        => clk,
-            rst        => rst,
+            rst        => sw15,
             ce_refresh => s_ce_refresh,
             data       => s_code,
             seg        => seg,

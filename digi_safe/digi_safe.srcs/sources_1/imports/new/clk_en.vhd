@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity clk_en is
- generic ( G_MAX : positive := 5 );
+ generic ( G_MAX : positive := 2 );
     Port ( clk : in STD_LOGIC;
            rst : in STD_LOGIC;
            ce : out STD_LOGIC);

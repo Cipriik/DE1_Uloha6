@@ -14,7 +14,7 @@ architecture Behavioral of debounce is
     -- Constants
     ----------------------------------------------------------------
     constant C_SHIFT_LEN : positive := 4;  -- Debounce history
-    constant C_MAX       : positive := 2;  -- Sampling period
+    constant C_MAX       : positive := 200_000;  -- Sampling period
                                            -- 2 for simulation
                                            -- 200_000 (2 ms) for implementation !!!
 
@@ -69,34 +69,26 @@ begin
                 sync1 <= sync0;
                 sync0 <= btn_in;
 
-                -- Sample only when enable pulse occurs
                 if ce_sample = '1' then
 
-                    -- Shift values to the left and load a new sample as LSB
                     shift_reg <= shift_reg(C_SHIFT_LEN-2 downto 0) & sync1;
 
-                    -- Check if all bits are '1'
                     if shift_reg = (shift_reg'range => '1') then
                         debounced <= '1';
-                    -- Check if all bits are '0'
                     elsif shift_reg = (shift_reg'range => '0') then
                         debounced <= '0';
                     end if;
 
                 end if;
 
-                -- One clock delayed output for edge detector
                 delayed <= debounced;
             end if;
         end if;
     end process;
 
-    ----------------------------------------------------------------
-    -- Outputs
-    ----------------------------------------------------------------
+
     btn_state <= debounced;
 
-    -- One-clock pulse when button pressed
     btn_press <= debounced and not(delayed);
 
 end Behavioral;
