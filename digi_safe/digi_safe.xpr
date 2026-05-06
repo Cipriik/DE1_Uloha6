@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/270925/Desktop/DE1_Uloha6/digi_safe/digi_safe.xpr">
+<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8cc756f733cc4f32aeb63b6a5842037c"/>
