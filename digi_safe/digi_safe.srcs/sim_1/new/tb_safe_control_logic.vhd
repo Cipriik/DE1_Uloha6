@@ -13,8 +13,8 @@ architecture tb of tb_safe_control_logic is
             btn_press    : in  std_logic;
             entered_code : in  std_logic_vector(15 downto 0);
             secret_code  : in  std_logic_vector(15 downto 0);
-            led_green    : out std_logic;
-            led_red      : out std_logic
+            ledm16       : out std_logic;
+            ledn16       : out std_logic
         );
     end component;
 
@@ -23,14 +23,16 @@ architecture tb of tb_safe_control_logic is
     signal btn_press    : std_logic := '0';
     signal entered_code : std_logic_vector(15 downto 0) := (others => '0');
     signal secret_code  : std_logic_vector(15 downto 0) := (others => '0');
-    signal led_green    : std_logic;
-    signal led_red      : std_logic;
+    signal ledm16       : std_logic;
+    signal ledn16       : std_logic;
 
     constant CLK_PERIOD : time := 10 ns;
 
 begin
 
-    -- Clock generator
+    --------------------------------------------------------------------
+    -- CLOCK
+    --------------------------------------------------------------------
     clk_process : process
     begin
         while true loop
@@ -41,7 +43,10 @@ begin
         end loop;
     end process;
 
+
+    --------------------------------------------------------------------
     -- DUT
+    --------------------------------------------------------------------
     dut : safe_control_logic
         port map (
             clk          => clk,
@@ -49,17 +54,20 @@ begin
             btn_press    => btn_press,
             entered_code => entered_code,
             secret_code  => secret_code,
-            led_green    => led_green,
-            led_red      => led_red
+            ledm16       => ledm16,
+            ledn16       => ledn16
         );
 
-    -- Stimuly
+
+    --------------------------------------------------------------------
+    -- TEST
+    --------------------------------------------------------------------
     stim_proc : process
     begin
 
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         -- RESET
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         rst <= '1';
         btn_press <= '0';
         entered_code <= x"0000";
@@ -70,18 +78,18 @@ begin
         rst <= '0';
         wait for 20 ns;
 
-        assert led_green = '0'
-            report "ERROR: Po resete ma byt led_green = 0"
+        assert ledm16 = '0'
+            report "ERROR: Po resete ma byt ledm16 = 0"
             severity error;
 
-        assert led_red = '0'
-            report "ERROR: Po resete ma byt led_red = 0"
+        assert ledn16 = '0'
+            report "ERROR: Po resete ma byt ledn16 = 0"
             severity error;
 
 
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         -- SPRAVNY KOD
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         entered_code <= x"1234";
         secret_code  <= x"1234";
 
@@ -93,18 +101,18 @@ begin
         btn_press <= '0';
         wait for 20 ns;
 
-        assert led_green = '1'
-            report "ERROR: Spravny kod nerozsvietil zelenu LED"
+        assert ledm16 = '1'
+            report "ERROR: Spravny kod nerozsvietil ledm16"
             severity error;
 
-        assert led_red = '0'
-            report "ERROR: Pri spravnom kode nema svietit cervena LED"
+        assert ledn16 = '0'
+            report "ERROR: Pri spravnom kode nema svietit ledn16"
             severity error;
 
 
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         -- RESET PRED ZLYM KODOM
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         rst <= '1';
         wait for 20 ns;
 
@@ -112,9 +120,9 @@ begin
         wait for 20 ns;
 
 
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         -- ZLY KOD
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
         entered_code <= x"9999";
         secret_code  <= x"1234";
 
@@ -126,18 +134,18 @@ begin
         btn_press <= '0';
         wait for 20 ns;
 
-        assert led_green = '0'
-            report "ERROR: Pri zlom kode nema svietit zelena LED"
+        assert ledm16 = '0'
+            report "ERROR: Pri zlom kode nema svietit ledm16"
             severity error;
 
-        assert led_red = '1'
-            report "ERROR: Zly kod nerozsvietil cervenu LED"
+        assert ledn16 = '1'
+            report "ERROR: Zly kod nerozsvietil ledn16"
             severity error;
 
 
-        --------------------------------------------------------------------
-        -- KONIEC
-        --------------------------------------------------------------------
+        ----------------------------------------------------------------
+        -- KONIEC SIMULACIE
+        ----------------------------------------------------------------
         assert false
             report "SIMULATION FINISHED"
             severity note;

@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May  6 12:07:01 2026
-# Process ID         : 11504
+# Start of session at: Tue May  5 22:21:44 2026
+# Process ID         : 14832
 # Current directory  : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9472 C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23844 C:\Users\Kuroki\Downloads\DE1_Uloha6\digi_safe\digi_safe.xpr
 # Log file           : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/vivado.log
 # Journal file       : C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe\vivado.jou
 # Running On         : DESKTOP-LLU21BE
@@ -19,14 +19,12 @@
 # Host memory        : 16989 MB
 # Swap memory        : 8321 MB
 # Total Virtual      : 25311 MB
-# Available Virtual  : 10243 MB
+# Available Virtual  : 11123 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.xpr
-launch_simulation
-launch_simulation
-launch_simulation
-source tb_safe_control_logic.tcl
+synth_design -top digi_safe -part xc7a50ticsg324-1L -lint 
 synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
 reset_project
-close_sim
+reset_project
