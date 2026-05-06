@@ -100,6 +100,8 @@ zadaný kód sa porovná so secret_code a zistí sa že je nesprávny => svieti 
 
 ## digit_editor
 
+[digit_editor.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/23dc0b6d0e45e6ec9dac9e16aff0f083e60cca73/digi_safe/digi_safe.srcs/sources_1/new/digit_editor.vhd)
+
 Inputy
 * clk - systémový clock
 * rst - globálny reset
