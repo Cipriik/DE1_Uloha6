@@ -51,18 +51,6 @@ Outputy
 * seg - 7 segmentový display
 * an - anody
 
-## clk_en
-
-[clk_en_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd)
-
-[clk_en](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd)
-
-Inputy
-* clk - systémový clock
-* rst -  Globální reset
-Outputy
-* ce - výstup clk_en
-
 ## safe_control_logic
 
 [safe_control_logic.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/new/safe_control_logic.vhd)
@@ -79,11 +67,23 @@ Outputy
 * led_green - výstup zelené led diody
 * led_red - výstup červené led diody
 
+## clk_en
+
+[clk_en_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/clk_en_tb.vhd)
+
+[clk_en](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/clk_en.vhd)
+
+Inputy
+* clk - systémový clock
+* rst -  Globální reset
+Outputy
+* ce - výstup clk_en
+
+
 ## debounce
 
 [debounce.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sources_1/imports/new/debounce.vhd)
 
-[debounce_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/main/digi_safe/digi_safe.srcs/sim_1/new/debounce_tb.vhd)
 
 Inputy
 * clk - systémový clock
