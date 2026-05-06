@@ -214,3 +214,18 @@ RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Mem
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 2791.438 ; gain = 1115.953
 reset_project
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
+Finished Parsing XDC File [C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.srcs/constrs_1/new/nexys.xdc]
+Completed Processing XDC Constraints
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May  6 23:03:57 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.runs/synth_1/runme.log
+[Wed May  6 23:03:57 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Kuroki/Downloads/DE1_Uloha6/digi_safe/digi_safe.runs/impl_1/runme.log
+reset_project
