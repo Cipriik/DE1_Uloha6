@@ -30,7 +30,7 @@ Vo videu demonštrujeme fungovanie projektu a popisujeme ako funguje.
 
 ## Bloková schéma
 
-![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/cfa4f29539304cef6e23f11bd03cdba220a41803/linter.png)
+![image_alt](https://github.com/Cipriik/DE1_Uloha6/blob/e1bb889b1286956248009e7fe840f1ed52bb7a61/final%20schema.png)
 
 Zde popisujeme soubory projektu:
 
