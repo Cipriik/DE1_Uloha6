@@ -84,8 +84,8 @@ Inputy
 * entered_code - zadaný kód ktorý sa porovnáva so secret_code
 
 Outputy
-* ledm16 - výstup zelené led diody
-* ledn16 - výstup červené led diody
+* ld16 - výstup zelené led diody
+* ld17 - výstup červené led diody
 
 [safe_control_tb.vhd](https://github.com/Cipriik/DE1_Uloha6/blob/2051a70c417804a45e1742274a433fd7e66df454/digi_safe/digi_safe.srcs/sim_1/new/tb_safe_control_logic.vhd)
 
